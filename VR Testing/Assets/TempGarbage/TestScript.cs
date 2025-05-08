@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class TestScript : MonoBehaviour
+public class TestScript : MonoBehaviour 
 {
     public Animator leftHandAnimator;
     public Animator rightHandAnimator;
