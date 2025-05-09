@@ -1,16 +1,22 @@
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.XR.Interaction.Toolkit;
 
-public class SteeringWheel : XRBaseInteractable
+public class SteeringWheelHandler : XRBaseInteractable
 {
     [SerializeField] private Transform wheelTransform;
     [SerializeField] private float minRotation;
     [SerializeField] private float maxRotation;
+    [SerializeField] private float revertSpeed;
+
+    [SerializeField] private bool shouldRotateBack;
+    [SerializeField] private float steerMaximum;
 
     public UnityEvent<float> OnWheelRotated;
 
     private float currentAngle = 0.0f;
+
 
     protected override void OnSelectEntered(SelectEnterEventArgs args)
     {
@@ -24,6 +30,41 @@ public class SteeringWheel : XRBaseInteractable
         currentAngle = FindWheelAngle();
     }
 
+    
+    private void Update()
+    {
+        if (!isSelected && shouldRotateBack)
+        {
+            RevertTheSteeringWheel();
+        }
+        
+        
+    }
+    
+    //Reverts the steering wheel to its normal state when not interacting with it anymore
+    private void RevertTheSteeringWheel()
+    {
+        float zRotation = NormalizeAngle(wheelTransform.eulerAngles.z);
+
+        if (zRotation < minRotation)
+        {
+            wheelTransform.Rotate(transform.forward, revertSpeed, Space.World);
+        }
+
+        else if (zRotation > maxRotation)
+        {
+            wheelTransform.Rotate(transform.forward, -revertSpeed, Space.World);
+        }
+    }
+
+    private float NormalizeAngle(float angle)
+    {
+        angle %= 360f;
+        if (angle > 180f) angle -= 360f;
+        return angle;
+    }
+
+    //Handles the steer rotation
     public override void ProcessInteractable(XRInteractionUpdateOrder.UpdatePhase updatePhase)
     {
         base.ProcessInteractable(updatePhase);
@@ -42,12 +83,22 @@ public class SteeringWheel : XRBaseInteractable
 
         // Apply difference in angle to wheel
         float angleDifference = currentAngle - totalAngle;
+
+        currentAngle += angleDifference;
+
+       
         wheelTransform.Rotate(transform.forward, -angleDifference, Space.World);
 
 
         // Store angle for next process
         currentAngle = totalAngle;
         OnWheelRotated?.Invoke(angleDifference);
+
+
+
+
+
+
     }
 
     private float FindWheelAngle()
