@@ -6,6 +6,7 @@ using UnityEngine;
 public class ActorBase : MonoBehaviour, IDamagable
 {
     [Header("Actor Base Stats")]
+
     [Tooltip("This acts as the base stats of this actor")]
     [SerializeField] protected ActorStats _actorStatsSO;
 

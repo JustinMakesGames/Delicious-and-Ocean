@@ -9,6 +9,11 @@ public class SpearBase : ActorBase
     [Tooltip("The damage of the spear")]
     [SerializeField] private int _spearDamage;
 
+    protected override void Init()
+    {
+        base.Init();
+
+    }
     //Test function to test whether or not damaging an actor works
     public void OnCollisionEnter(Collision collision)
     {

@@ -4,5 +4,6 @@ using UnityEngine;
 
 public interface IDamagable
 {
-  public void OnDamageTaken(int damage);
+    [Tooltip("This function is called when T takes damage")]
+    public void OnDamageTaken(int damage);
 }

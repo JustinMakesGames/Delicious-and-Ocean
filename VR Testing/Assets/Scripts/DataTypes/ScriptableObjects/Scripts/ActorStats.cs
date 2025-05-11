@@ -5,10 +5,10 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/ActorStats")]
 public class ActorStats : ScriptableObject
 {
-    //The maximum health of the actor
+    [Tooltip("The maximum health of the actor, the current health of the actor cannot exceed this value")]
     public int maxHealth;
 
-    //The starting state of the actor, whether the actor can or cannot be hurt. 
+    [Tooltip("The starting state of the actor, whether the actor can or cannot be hurt. ")]
     public ImmunityState startState;
 
 }
