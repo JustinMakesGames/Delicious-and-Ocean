@@ -1,4 +1,6 @@
+using System.Net;
 using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.XR.Interaction.Toolkit;
@@ -11,7 +13,11 @@ public class SteeringWheelHandler : XRBaseInteractable
     [SerializeField] private float revertSpeed;
 
     [SerializeField] private bool shouldRotateBack;
+    [SerializeField] private float steerMinimum;
     [SerializeField] private float steerMaximum;
+    [SerializeField] private float maxAngleDifference;
+
+    private float rotation;
 
     public UnityEvent<float> OnWheelRotated;
 
@@ -22,12 +28,14 @@ public class SteeringWheelHandler : XRBaseInteractable
     {
         base.OnSelectEntered(args);
         currentAngle = FindWheelAngle();
+        rotation = wheelTransform.eulerAngles.z;
     }
 
     protected override void OnSelectExited(SelectExitEventArgs args)
     {
         base.OnSelectExited(args);
         currentAngle = FindWheelAngle();
+        rotation = wheelTransform.eulerAngles.z;
     }
 
     
@@ -84,21 +92,29 @@ public class SteeringWheelHandler : XRBaseInteractable
         // Apply difference in angle to wheel
         float angleDifference = currentAngle - totalAngle;
 
-        currentAngle += angleDifference;
+        float newRotation = rotation - angleDifference;
+        if (newRotation < 0)
+        {
+            newRotation += 360;
+        }
 
-       
+        if (newRotation >= 360)
+        {
+            newRotation -= 360;
+        }
+
+        print(newRotation);
+
+
+        if (newRotation > steerMinimum && newRotation < steerMaximum) return;
         wheelTransform.Rotate(transform.forward, -angleDifference, Space.World);
+
+        rotation = newRotation;
 
 
         // Store angle for next process
         currentAngle = totalAngle;
         OnWheelRotated?.Invoke(angleDifference);
-
-
-
-
-
-
     }
 
     private float FindWheelAngle()
@@ -112,19 +128,21 @@ public class SteeringWheelHandler : XRBaseInteractable
             totalAngle += ConvertToAngle(direction) * FindRotationSensitivity();
         }
 
+        
         return totalAngle;
     }
 
+    //Het moet beginnen gebaseerd op waar de rotatie van het wiel is en daar
     private Vector2 FindLocalPoint(Vector3 position)
     {
-        // Convert the hand positions to local, so we can find the angle easier
+        
         return transform.InverseTransformPoint(position).normalized;
     }
 
     private float ConvertToAngle(Vector2 direction)
     {
-        // Use a consistent up direction to find the angle
-        return Vector2.SignedAngle(Vector2.up, direction);
+        float angle = Vector2.SignedAngle(Vector2.up, direction);
+        return angle;
     }
 
     private float FindRotationSensitivity()

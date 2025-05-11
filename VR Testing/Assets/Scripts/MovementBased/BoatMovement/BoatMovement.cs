@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
+using UnityEditor.ShaderKeywordFilter;
 using UnityEngine;
 
 public class BoatMovement : MonoBehaviour
 {
     [SerializeField] private float speedMultiplier;
 
+    [SerializeField] private float accelerationSpeed;
+    [SerializeField] private float decelerationSpeed;
+    [SerializeField] private float acceleration;
     [SerializeField] private Transform lever;
     [SerializeField] private Transform steeringWheel;
     [SerializeField] private float turnSpeed;
@@ -26,8 +30,6 @@ public class BoatMovement : MonoBehaviour
         CalculateVelocity();
 
         turnSpeed = CalculateTurnSpeed();
-
-        print("AngularVelocity: " + _rb.angularVelocity);
         _rb.AddTorque(0, turnSpeed * Time.fixedDeltaTime, 0, ForceMode.Acceleration);
     }
 
@@ -41,9 +43,30 @@ public class BoatMovement : MonoBehaviour
     private void CalculateVelocity()
     {
         float leverAngle = NormalizeAngle(lever.eulerAngles.z);
-        float speed = leverAngle / 90;
+        float speed = leverAngle / 10;
 
-        _rb.velocity = transform.forward * speed * speedMultiplier * Time.fixedDeltaTime;
+
+        _rb.velocity = transform.forward * acceleration * speedMultiplier * Time.fixedDeltaTime;
+
+        if (leverAngle > -2 && leverAngle < 2)
+        {
+            acceleration = Mathf.Lerp(acceleration, 0, decelerationSpeed * Time.deltaTime);
+
+            if (acceleration < 0.1)
+            {
+                acceleration = 0;
+            }
+            return;
+        }
+        if (acceleration * speed < 0)
+        {
+            acceleration = Mathf.Lerp(acceleration, speed, decelerationSpeed * Time.deltaTime);
+            return;
+        }
+        if (Mathf.Abs(acceleration) < Mathf.Abs(speed))
+        {
+            acceleration = Mathf.Lerp(acceleration, speed, accelerationSpeed * Time.deltaTime);
+        }
 
     }
 
