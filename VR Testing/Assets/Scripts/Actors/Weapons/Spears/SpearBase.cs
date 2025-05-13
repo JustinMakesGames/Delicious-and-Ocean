@@ -15,9 +15,9 @@ public class SpearBase : ActorBase
 
     }
     //Test function to test whether or not damaging an actor works
-    public void OnCollisionEnter(Collision collision)
+    public void OnTriggerEnter(Collider collision)
     {
-        if (collision.collider.TryGetComponent<IDamagable>(out IDamagable damagable))
+        if (collision.TryGetComponent<IDamagable>(out IDamagable damagable))
         {
             damagable.OnDamageTaken(_spearDamage);
         }

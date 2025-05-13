@@ -30,7 +30,7 @@ public class BoatMovement : MonoBehaviour
         CalculateVelocity();
 
         turnSpeed = CalculateTurnSpeed();
-        _rb.AddTorque(0, turnSpeed * Time.fixedDeltaTime, 0, ForceMode.Acceleration);
+        transform.Rotate(Vector3.up * turnSpeed * Time.deltaTime);
     }
 
     private float NormalizeAngle(float angle)
