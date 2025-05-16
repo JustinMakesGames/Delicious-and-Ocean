@@ -4,19 +4,6 @@ using UnityEngine;
 
 public class SeaGenerator : MonoBehaviour
 {
-    [Tooltip("The vector3 array responsible for holding the offsets of the chunks")]
-    private Vector3[] _offsets = {
-        new Vector3(0, 0, 0),
-        new Vector3(0, 0, 1),
-        new Vector3(1, 0, 0),
-        new Vector3(1, 0, 1),
-        new Vector3(0, 0, -1),
-        new Vector3(-1, 0, 0),
-        new Vector3(-1, 0, -1),
-        new Vector3(1, 0, -1),
-        new Vector3(-1, 0, 1),
-    };
-
     [Tooltip("The 2-dimensional width and height of the (to be generated) chunks")]
     [SerializeField] private int _chunkSize;
 
@@ -28,11 +15,17 @@ public class SeaGenerator : MonoBehaviour
     private Vector3Int _currentChunkPosition;
 
     [Tooltip("Holds the positions of chunks that are already generated, for fast lookup")]
-    private HashSet<Vector3Int> _existingChunks = new HashSet<Vector3Int>();
+    private HashSet<Vector3Int> _existingChunkPositions = new HashSet<Vector3Int>();
 
 
     [Tooltip("Chunk init values")]
     [SerializeField] private GameObject _waterPrefab;
+
+    [Tooltip("The objects that may be generated within chunks")]    
+    [SerializeField] private List<GenerationObject> _generationObjects = new List<GenerationObject>();
+
+    [Tooltip("The amount of objects that may be generated within chunks")]
+    [SerializeField] private int _generationObjectCount;
 
     private void Update()
     {
@@ -59,7 +52,7 @@ public class SeaGenerator : MonoBehaviour
             {
                 Vector3Int chunkPosition = new Vector3Int(originPoint.x + x, originPoint.y, originPoint.z + z);
 
-                if (!_existingChunks.Contains(chunkPosition))
+                if (!_existingChunkPositions.Contains(chunkPosition))
                 {
                     chunkPositions.Add(chunkPosition);
                 }
@@ -72,10 +65,10 @@ public class SeaGenerator : MonoBehaviour
             GameObject chunk = Instantiate(_chunkPrefab);
             chunk.transform.position = chunkPosition * _chunkSize;
 
-            chunk.GetComponent<Chunk>().Init(_waterPrefab, _chunkSize);
+            chunk.GetComponent<Chunk>().Init(_waterPrefab, _chunkSize, _generationObjects, _generationObjectCount);
 
             _chunks.Add(chunk);
-            _existingChunks.Add(chunkPosition);
+            _existingChunkPositions.Add(chunkPosition);
         }
     }
 
@@ -98,7 +91,7 @@ public class SeaGenerator : MonoBehaviour
         foreach (var chunk in chunksToRemove)
         {
             _chunks.Remove(chunk);
-            _existingChunks.Remove(new Vector3Int(Mathf.FloorToInt(chunk.transform.position.x / _chunkSize), 0, Mathf.FloorToInt(chunk.transform.position.z / _chunkSize)));
+            _existingChunkPositions.Remove(new Vector3Int(Mathf.FloorToInt(chunk.transform.position.x / _chunkSize), 0, Mathf.FloorToInt(chunk.transform.position.z / _chunkSize)));
             Destroy(chunk);
         }
     }

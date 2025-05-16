@@ -188,8 +188,12 @@ MonoBehaviour:
   _chunkPrefab: {fileID: 8910254547822603244, guid: f5ac5b644a840cc45aeafe0812554ddb,
     type: 3}
   _chunks: []
-  _waterPrefab: {fileID: 8700544973934531619, guid: e5b8f791a40971e4cafe287c4af86f5a,
+  _waterPrefab: {fileID: 4432140573412730233, guid: e84c3b9834292774cb2d9fec72909a86,
     type: 3}
+  _generationObjects:
+  - {fileID: 11400000, guid: 8d4c22f646db1e84daf8e0e868bc9ea2, type: 2}
+  - {fileID: 11400000, guid: 145711a4e3ee8be4bb7890346d026e70, type: 2}
+  _generationObjectCount: 25
 --- !u!4 &822130599
 Transform:
   m_ObjectHideFlags: 0
@@ -498,7 +502,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
