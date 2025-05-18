@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class SeaGenerator : MonoBehaviour
 {
+    [Tooltip("The seed used to generate the objects within the chunks")]
+    [SerializeField] private int _seed;
+
     [Tooltip("The 2-dimensional width and height of the (to be generated) chunks")]
     [SerializeField] private int _chunkSize;
 
@@ -21,11 +24,16 @@ public class SeaGenerator : MonoBehaviour
     [Tooltip("Chunk init values")]
     [SerializeField] private GameObject _waterPrefab;
 
-    [Tooltip("The objects that may be generated within chunks")]    
-    [SerializeField] private List<GenerationObject> _generationObjects = new List<GenerationObject>();
+    [Tooltip("The generator responsible for generating objects within the chunks")]
+    [SerializeField] private ObjectGenerator _objectGenerator;
 
     [Tooltip("The amount of objects that may be generated within chunks")]
     [SerializeField] private int _generationObjectCount;
+
+    private void Awake()
+    {
+        _seed = _seed == 0 ? Random.Range(int.MinValue, int.MaxValue) : _seed;
+    }
 
     private void Update()
     {
@@ -65,7 +73,7 @@ public class SeaGenerator : MonoBehaviour
             GameObject chunk = Instantiate(_chunkPrefab);
             chunk.transform.position = chunkPosition * _chunkSize;
 
-            chunk.GetComponent<Chunk>().Init(_waterPrefab, _chunkSize, _generationObjects, _generationObjectCount);
+            chunk.GetComponent<Chunk>().Init(_waterPrefab, _chunkSize, _objectGenerator, _generationObjectCount, _seed);
 
             _chunks.Add(chunk);
             _existingChunkPositions.Add(chunkPosition);

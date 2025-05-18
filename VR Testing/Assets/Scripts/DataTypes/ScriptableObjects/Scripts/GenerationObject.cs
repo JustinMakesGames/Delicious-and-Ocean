@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/GenerationObject")]
+[CreateAssetMenu(menuName = "ScriptableObjects/Generation/GenerationObject")]
 public class GenerationObject : ScriptableObject
 {
     [Tooltip("The prefab of the object, which will be instantiated")]
@@ -12,7 +12,7 @@ public class GenerationObject : ScriptableObject
     [Tooltip("The additive position of the objects relative to its set spawningposition, only used if relatieveObjectPos is equal to vector3.zero")]
     public Vector3 relativeObjectAdditivePos;
 
-    [Tooltip("Whether or not multiple instances of this may be generated")]
-    public bool multipleInstancesAllowed = true;
+    //[Tooltip("Whether or not multiple instances of this may be generated")]
+    //public bool multipleInstancesAllowed = true;
 
 }

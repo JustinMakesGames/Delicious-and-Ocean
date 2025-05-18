@@ -3,43 +3,42 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public unsafe class Chunk : MonoBehaviour
+public class Chunk : MonoBehaviour
 {
     [SerializeField] private Transform _waterPos;
 
     [SerializeField] private List<GameObject> _generatedObjects = new List<GameObject>();
 
-    public void Init(GameObject waterGO, int chunkSize, List<GenerationObject> generationObjects, int generationObjectCount)
+
+    private System.Random _randomNumGen;
+
+    public void Init(GameObject waterGO, int chunkSize, ObjectGenerator OG, int generationObjectCount, int seed)
     {
+        _randomNumGen = new System.Random(((int)(transform.position.x * transform.position.z) + seed) / 2);
+        name = (((int)(transform.position.x * transform.position.z) + seed) / 2).ToString();
         var water = Instantiate(waterGO, _waterPos.position, Quaternion.identity, transform);
 
         //Temporary division by 1000, the water import is fucked
         water.transform.localScale = new Vector3(chunkSize / 100_0, 1, chunkSize / 100_0);
 
-        SeedChunk(chunkSize, generationObjects, generationObjectCount);
+        SeedChunk(chunkSize, OG, generationObjectCount);
     }
 
     //Seeds the chunk with objects
-    private unsafe void SeedChunk(int chunkSize, List<GenerationObject> generationObjects, int generationObjectCount)
+    private unsafe void SeedChunk(int chunkSize, ObjectGenerator OG, int generationObjectCount)
     {
-        //Init the list of generation objects
-        List<GenerationObject> _generationObjects = new List<GenerationObject>();
-        for (int i = 0; i < generationObjects.Count; i++)
-        {
-            _generationObjects.Add(generationObjects[i]);
-        }
 
         //Generate the objects
         for (int i = 0; i < generationObjectCount; i++)
         {
-            int randomIndex = Random.Range(0, _generationObjects.Count);
-            GenerationObject randomGenerationObject = _generationObjects[randomIndex];
+
+            GenerationObject randomGenerationObject = OG.GetRandomObject(_randomNumGen);
 
             Vector3 GetRandomPos()
             {
                 Vector3 randomPosition = randomGenerationObject.setRelativeObjectPos != Vector3.zero
     ? randomGenerationObject.setRelativeObjectPos + transform.position
-    : new Vector3(Random.Range(-chunkSize / 2, chunkSize / 2), 0, Random.Range(-chunkSize / 2, chunkSize / 2))
+    : new Vector3(_randomNumGen.Next(-chunkSize / 2, chunkSize / 2), 0, _randomNumGen.Next(-chunkSize / 2, chunkSize / 2))
     + transform.position
     + randomGenerationObject.relativeObjectAdditivePos;
                 return randomPosition;
@@ -47,10 +46,6 @@ public unsafe class Chunk : MonoBehaviour
 
             GameObject generatedObject = Instantiate(randomGenerationObject.objectGO, GetRandomPos(), Quaternion.identity, transform);
 
-            if (randomGenerationObject.multipleInstancesAllowed == false)
-            {
-                _generationObjects.RemoveAt(randomIndex);
-            }
             _generatedObjects.Add(generatedObject);
         }
     }

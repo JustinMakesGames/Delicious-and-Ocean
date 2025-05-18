@@ -5,7 +5,7 @@ using Unity.VisualScripting;
 using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/ActorStats")]
+[CreateAssetMenu(menuName = "ScriptableObjects/Actors/ActorStats")]
 public class ActorStats : ScriptableObject
 {
     [Tooltip("The maximum health of the actor, the current health of the actor cannot exceed this value. ")]
