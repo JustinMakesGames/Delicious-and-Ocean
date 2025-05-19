@@ -12,4 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b30e3b4ad84a12341a1f0099e2eed1f8, type: 3}
   m_Name: Plain
   m_EditorClassIdentifier: 
-  objects: []
+  objects:
+  - GO: {fileID: 11400000, guid: 8d4c22f646db1e84daf8e0e868bc9ea2, type: 2}
+    chance: 80
+  - GO: {fileID: 11400000, guid: 145711a4e3ee8be4bb7890346d026e70, type: 2}
+    chance: 100

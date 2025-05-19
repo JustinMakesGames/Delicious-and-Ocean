@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
+  - Weapon
+  - Pool
   layers:
   - Default
   - TransparentFX
@@ -14,8 +16,8 @@ TagManager:
   - UI
   - Ground
   - Player
-  - 
-  - 
+  - Weapon
+  - Pool
   - 
   - 
   - 
