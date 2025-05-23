@@ -15,7 +15,7 @@ public class SeaGenerator : MonoBehaviour
     [Tooltip("Holds the chunks that are generated")]
     [SerializeField] private List<GameObject> _chunks = new List<GameObject>();
 
-    private Vector3Int _currentChunkPosition;
+   [SerializeField] private Vector3Int _currentChunkPosition;
 
     [Tooltip("Holds the positions of chunks that are already generated, for fast lookup")]
     private HashSet<Vector3Int> _existingChunkPositions = new HashSet<Vector3Int>();
@@ -29,6 +29,9 @@ public class SeaGenerator : MonoBehaviour
 
     [Tooltip("The amount of objects that may be generated within chunks")]
     [SerializeField] private int _generationObjectCount;
+
+    [Tooltip("The X*X amount of chunks generated around the SeaGenerator")]
+    [SerializeField] private int _chunkDimensions;
 
     private void Awake()
     {

@@ -184,16 +184,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16df63007eb38f64ca1cb9cdcd67fa8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _seed: 0
   _chunkSize: 1000
   _chunkPrefab: {fileID: 8910254547822603244, guid: f5ac5b644a840cc45aeafe0812554ddb,
     type: 3}
   _chunks: []
+  _currentChunkPosition: {x: 0, y: 0, z: 0}
   _waterPrefab: {fileID: 4432140573412730233, guid: e84c3b9834292774cb2d9fec72909a86,
     type: 3}
-  _generationObjects:
-  - {fileID: 11400000, guid: 8d4c22f646db1e84daf8e0e868bc9ea2, type: 2}
-  - {fileID: 11400000, guid: 145711a4e3ee8be4bb7890346d026e70, type: 2}
+  _objectGenerator: {fileID: 11400000, guid: 514b03a84f0780c4eb2ea1265faab325, type: 2}
   _generationObjectCount: 25
+  _chunkDimensions: 1
 --- !u!4 &822130599
 Transform:
   m_ObjectHideFlags: 0

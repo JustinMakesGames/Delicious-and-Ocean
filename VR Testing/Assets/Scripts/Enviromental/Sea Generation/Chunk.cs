@@ -25,7 +25,7 @@ public class Chunk : MonoBehaviour
     }
 
     //Seeds the chunk with objects
-    private unsafe void SeedChunk(int chunkSize, ObjectGenerator OG, int generationObjectCount)
+    private void SeedChunk(int chunkSize, ObjectGenerator OG, int generationObjectCount)
     {
 
         //Generate the objects
@@ -34,6 +34,7 @@ public class Chunk : MonoBehaviour
 
             GenerationObject randomGenerationObject = OG.GetRandomObject(_randomNumGen);
 
+            //Gets a random position within the bounds of the chunk
             Vector3 GetRandomPos()
             {
                 Vector3 randomPosition = randomGenerationObject.setRelativeObjectPos != Vector3.zero
