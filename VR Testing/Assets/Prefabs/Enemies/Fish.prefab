@@ -118,8 +118,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3567b8185d1d05445af2c60015eddb13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _actorStatsSO: {fileID: 11400000, guid: 840fad70b47020045ab939c47430a992, type: 2}
+  _currentHealth: 0
+  _currentState: 0
+  possibleFoodOutcome:
+  - {fileID: 7634388798600993458, guid: 6c96a879afe02b848b0ca2befef16edf, type: 3}
+  myRenderer: {fileID: 8884488620047957236}
   rotateAroundSpeed: 50
   fishSpeed: 5
-  food: {fileID: 7634388798600993458, guid: 6c96a879afe02b848b0ca2befef16edf, type: 3}
+  food: {fileID: 0}
   intervalTime: 1
   rotationSpeed: 20

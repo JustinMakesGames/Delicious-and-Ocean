@@ -16,6 +16,9 @@ public class ActorBase : MonoBehaviour, IDamagable
     [Tooltip("The Immunity state of the actor, whether it can, or cannot be hurt")]
     [SerializeField] protected ImmunityState _currentState;
 
+    [Tooltip("This is what kind of food will drop out of this actor")]
+    [SerializeField] private List<GameObject> possibleFoodOutcome;
+
     //Standard unity awake
     protected virtual void Awake()
     {
@@ -50,7 +53,12 @@ public class ActorBase : MonoBehaviour, IDamagable
     //This function is called when the actor dies (Example: When the health of the actor hits 0)
     protected virtual void OnActorDeath()
     {
-        //Example logic, 
+        SpawnFood();
         Destroy(gameObject);
+    }
+
+    private void SpawnFood()
+    {
+        FoodHandler.Instance.GetSomeFood(possibleFoodOutcome, transform);
     }
 }

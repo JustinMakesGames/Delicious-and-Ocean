@@ -7,14 +7,14 @@ public class SpearBase : ActorBase
     [Header("Spear Stats")]
 
     [Tooltip("The damage of the spear")]
-    [SerializeField] private int _spearDamage;
+    public int spearDamage;
 
     protected override void Init()
     {
         base.Init();
         if (_actorStatsSO)
         {
-            _spearDamage = _actorStatsSO.startDamage;
+            spearDamage = _actorStatsSO.startDamage;
         }
         else
         {
@@ -26,7 +26,7 @@ public class SpearBase : ActorBase
     {
         if (collision.TryGetComponent<IDamagable>(out IDamagable damagable))
         {
-            damagable.OnDamageTaken(_spearDamage);
+            damagable.OnDamageTaken(spearDamage);
         }
     }
 }

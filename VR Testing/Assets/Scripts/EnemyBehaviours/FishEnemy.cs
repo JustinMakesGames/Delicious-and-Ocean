@@ -4,26 +4,23 @@ using Unity.VisualScripting;
 using Unity.XR.CoreUtils;
 using UnityEngine;
 
-public class FishEnemy : MonoBehaviour
+public class FishEnemy : BaseEnemy
 {
     [SerializeField] private float rotateAroundSpeed;
     [SerializeField] private float fishSpeed;
-
-    
     [SerializeField] private GameObject food;
     [SerializeField] private float intervalTime;
     [SerializeField] private float rotationSpeed;
 
-    private Transform _player;
     private Vector3 _destination;
     private Quaternion _rotationToLookAt;
     private Transform _worldPool;
     private bool _hasPlayerPassed;
     private bool _isMovingDifferently;
 
-    private void Awake()
+    protected override void Awake()
     {
-        _player = FindObjectOfType<XROrigin>().transform;
+        base.Awake();
         _worldPool = transform.parent;
     }
 
@@ -94,15 +91,5 @@ public class FishEnemy : MonoBehaviour
         _rotationToLookAt = Quaternion.LookRotation(direction);
 
 
-    }
-
-    private void OnDisable()
-    {
-        SpawnFood();
-    }
-
-    private void SpawnFood()
-    {
-        GameObject foodClone = Instantiate(food, _player.position + _player.forward, Quaternion.identity);
     }
 }
