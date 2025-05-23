@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &1511417809492928567
+--- !u!1001 &4848412941026274935
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -11,17 +11,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 3203e0e2db8793441b50731d21b13f89,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.07
+      value: 10.95
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3203e0e2db8793441b50731d21b13f89,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.5265384
+      value: -8.75
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3203e0e2db8793441b50731d21b13f89,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -70.81
+      value: -74.26
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3203e0e2db8793441b50731d21b13f89,
         type: 3}
@@ -67,25 +67,25 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3203e0e2db8793441b50731d21b13f89,
+    - targetCorrespondingSourceObject: {fileID: -8498787968155683825, guid: 3203e0e2db8793441b50731d21b13f89,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5001766394211651445}
+      addedObject: {fileID: 691067373215743764}
   m_SourcePrefab: {fileID: 100100000, guid: 3203e0e2db8793441b50731d21b13f89, type: 3}
---- !u!1 &1745368797583988070 stripped
+--- !u!1 &5280251480483322488 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3203e0e2db8793441b50731d21b13f89,
+  m_CorrespondingSourceObject: {fileID: -8498787968155683825, guid: 3203e0e2db8793441b50731d21b13f89,
     type: 3}
-  m_PrefabInstance: {fileID: 1511417809492928567}
+  m_PrefabInstance: {fileID: 4848412941026274935}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &5001766394211651445
+--- !u!95 &691067373215743764
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1745368797583988070}
+  m_GameObject: {fileID: 5280251480483322488}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 76ae3964080b2444b892782aec71cccb, type: 2}
