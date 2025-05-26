@@ -574,6 +574,12 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 1
+--- !u!4 &440194945 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 758490194771714172, guid: 206e323d574c6f2449c66b977e93af5f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7430366084175970250}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &547727143
 GameObject:
   m_ObjectHideFlags: 0
@@ -3603,6 +3609,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+--- !u!4 &1357290432 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3879980599846334435, guid: 206e323d574c6f2449c66b977e93af5f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7430366084175970250}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1454457107
 GameObject:
   m_ObjectHideFlags: 0
@@ -3697,6 +3709,12 @@ Transform:
   - {fileID: 763306570}
   m_Father: {fileID: 2018014740}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1665446437 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1894642494857143757, guid: 206e323d574c6f2449c66b977e93af5f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7430366084175970250}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1686152170
 GameObject:
   m_ObjectHideFlags: 0
@@ -3803,9 +3821,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1878858771 stripped
+--- !u!4 &1761572753 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 3219711009602274283, guid: 206e323d574c6f2449c66b977e93af5f,
+  m_CorrespondingSourceObject: {fileID: 9085429500133441305, guid: 206e323d574c6f2449c66b977e93af5f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7430366084175970250}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1789445453 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5563880978964477698, guid: 206e323d574c6f2449c66b977e93af5f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7430366084175970250}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1919798301 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 690236333307440888, guid: 206e323d574c6f2449c66b977e93af5f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7430366084175970250}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1946944380 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5277523929463084145, guid: 206e323d574c6f2449c66b977e93af5f,
     type: 3}
   m_PrefabInstance: {fileID: 7430366084175970250}
   m_PrefabAsset: {fileID: 0}
@@ -3818,7 +3854,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2018014740}
-  - component: {fileID: 2018014739}
+  - component: {fileID: 2018014741}
   m_Layer: 0
   m_Name: EvilFish
   m_TagString: Untagged
@@ -3826,39 +3862,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2018014739
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2018014738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a7d3ff4bb006e84d8eb9a8052fe702c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _actorStatsSO: {fileID: 0}
-  _currentHealth: 0
-  _currentState: 0
-  possibleFoodOutcome: []
-  myRenderer: {fileID: 0}
-  player: {fileID: 0}
-  fishModel: {fileID: 0}
-  animator: {fileID: 763306572}
-  enemyState: 0
-  enemyRange: 10
-  fishSpeed: 50
-  rotationSpeed: 10
-  boat: {fileID: 181346731}
-  boatRange: 999
-  fishPositions: {fileID: 1878858771}
-  jumpDistance: 30
-  jumpHeight: 60
-  jumpDuration: 3
-  endPositionShip: {fileID: 0}
-  downSpeed: 10
-  upSpeed: 30
 --- !u!4 &2018014740
 Transform:
   m_ObjectHideFlags: 0
@@ -3869,12 +3872,51 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 35.72, y: -0.86, z: -3.3}
-  m_LocalScale: {x: 0.4058866, y: 0.4058866, z: 0.4058866}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1597015545}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2018014741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018014738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4752a0fc7b9e624bb0d9367bc81d55d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _actorStatsSO: {fileID: 0}
+  _currentHealth: 0
+  _currentState: 0
+  possibleFoodOutcome: []
+  _fishTransform: {fileID: 763306570}
+  animator: {fileID: 763306572}
+  enemyRange: 20
+  fishSpeed: 50
+  rotationSpeed: 50
+  boat: {fileID: 181346731}
+  boatRange: 9999999
+  enemyState: 0
+  jumpDistance: 30
+  jumpHeight: 60
+  jumpDuration: 3
+  downSpeed: 10
+  upSpeed: 30
+  fishLeftPositions:
+  - {fileID: 1919798301}
+  - {fileID: 440194945}
+  - {fileID: 1789445453}
+  - {fileID: 1357290432}
+  fishRightPositions:
+  - {fileID: 2073174623}
+  - {fileID: 1946944380}
+  - {fileID: 1761572753}
+  - {fileID: 1665446437}
 --- !u!1 &2056005821
 GameObject:
   m_ObjectHideFlags: 0
@@ -4022,6 +4064,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boat: {fileID: 0}
+--- !u!4 &2073174623 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3828606211869274372, guid: 206e323d574c6f2449c66b977e93af5f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7430366084175970250}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2142687669
 GameObject:
   m_ObjectHideFlags: 0

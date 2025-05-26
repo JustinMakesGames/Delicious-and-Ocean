@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -28,8 +29,7 @@ public class Fred : BaseEnemy
     [SerializeField] private Transform boat;
     [Tooltip("The range at which the fish will spot the boat and start moving towards it")]
     [SerializeField] private float boatRange;
-    [Tooltip("The positions where the fish can jump over the boat")]
-    [SerializeField] private Transform[] fishPositions;
+
     [Tooltip("The transform of the fish's mesh")]
     private Transform _fishPosition;
     private bool _hasSpottedShip;
@@ -41,7 +41,11 @@ public class Fred : BaseEnemy
     [SerializeField] private float jumpDuration;
     [SerializeField] private float downSpeed;
     [SerializeField] private float upSpeed;
+    [Tooltip("The positions where the fish can jump over the boat")]
+    [SerializeField] private List<Transform> fishLeftPositions;
+    [SerializeField] private List<Transform> fishRightPositions;
     private bool _isArcing;
+    private bool _isOnOtherSide;
 
     protected override void Awake()
     {
@@ -188,6 +192,7 @@ public class Fred : BaseEnemy
 
         transform.parent = null;
 
+        _isOnOtherSide = !_isOnOtherSide;
         ChooseNextAttack();
     }
 
@@ -207,12 +212,20 @@ public class Fred : BaseEnemy
     private void StartArcAttack()
     {
         _fishPosition = FindRandomBoatPosition();
-        _isArcing = true;
+        _isArcing = false;
     }
 
     private Transform FindRandomBoatPosition()
-    { 
-        return fishPositions.OrderBy(a => Vector3.Distance(a.position, _fishTransform.position)).FirstOrDefault();
+    {
+        if (_isOnOtherSide)
+        {
+            return fishLeftPositions[Random.Range(0, fishLeftPositions.Count)];
+        }
+
+        else
+        {
+            return fishRightPositions[Random.Range(0, fishRightPositions.Count)];
+        }
     }
 
 
