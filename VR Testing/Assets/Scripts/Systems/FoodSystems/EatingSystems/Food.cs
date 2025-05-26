@@ -41,6 +41,8 @@ public class Food : MonoBehaviour
     [SerializeField] private bool _inProcess;
     [SerializeField] private CookData[] _cookData;
 
+    private GameObject _resultGO;
+
     //Check for the cooker to see whether or not it can cook this food
     private bool CanCookFood(Cooker cooker)
     {
@@ -51,7 +53,9 @@ public class Food : MonoBehaviour
         foreach (var CD in _cookData)
         {
             if (CD.cookingType.HasFlag(cooker.cookingType))
-            { 
+            {
+                //Set here to prevent checking twice
+                _resultGO = CD.resultGO;
                 return true;
             }
         }
@@ -63,7 +67,17 @@ public class Food : MonoBehaviour
     //Called upon the cooker being done(in most cases the start of the day)
     public void OnFoodCooked()
     {
+        Instantiate(_resultGO, transform.position, Quaternion.identity);
+        Destroy(gameObject);
+    }
 
+    //Called when the food is assigned to the cooker
+    public void OnFoodAssigned()
+    {
+        if(TryGetComponent(out Rigidbody RB))
+        {
+            RB.isKinematic = true;
+        }
     }
 
     //Temporary check, to be removed

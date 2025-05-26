@@ -1,25 +1,24 @@
 using System;
 using System.Collections;
-
+using System.Linq;
 using UnityEngine;
 using Random = UnityEngine.Random;
-
-public class BasicEnemy : BaseEnemy
+public enum EnemyState
 {
-    [SerializeField] private Transform player;
-    [SerializeField] private Transform fishModel;
+    IdleState,
+    PlayerSpottedState,
+    EnemyAttacks
+}
+
+public class Fred : BaseEnemy
+{
+    [Header("Basic Enemy Variables")]
+    [Tooltip("The transform of the fish, used for rotation and position changes")]
+    [SerializeField] private Transform _fishTransform;
     [SerializeField] private Animator animator;
     private Vector3 _originalPosition;
 
-    public enum EnemyState
-    {
-        IdleState,
-        PlayerSpottedState,
-        EnemyAttacks
-    }
-
-    public EnemyState enemyState;
-    [Header("NormalFishStats")]
+    [Header("MovementVars")]
     [SerializeField] private float enemyRange;
     [SerializeField] private float fishSpeed;
     [SerializeField] private float rotationSpeed;
@@ -27,28 +26,30 @@ public class BasicEnemy : BaseEnemy
 
     [Header("PlayerSpotted Variables")]
     [SerializeField] private Transform boat;
+    [Tooltip("The range at which the fish will spot the boat and start moving towards it")]
     [SerializeField] private float boatRange;
-    [SerializeField] private Transform fishPositions;
+    [Tooltip("The positions where the fish can jump over the boat")]
+    [SerializeField] private Transform[] fishPositions;
+    [Tooltip("The transform of the fish's mesh")]
     private Transform _fishPosition;
+    private bool _hasSpottedShip;
+    public EnemyState enemyState;
 
     [Header("JumpArc Variables")]
-    
     [SerializeField] private float jumpDistance;
     [SerializeField] private float jumpHeight;
     [SerializeField] private float jumpDuration;
-    [SerializeField] private Transform endPositionShip;
     [SerializeField] private float downSpeed;
     [SerializeField] private float upSpeed;
-
     private bool _isArcing;
-    private bool _hasSpottedShip;
+
     protected override void Awake()
     {
         base.Awake();
-        fishModel = transform.GetChild(0);
+        _fishTransform = transform.GetChild(0);
     }
 
-    private void Start()
+    protected void Start()
     {
         _originalPosition = transform.position;
         StateChange(enemyState);
@@ -75,7 +76,7 @@ public class BasicEnemy : BaseEnemy
                 break;
             case EnemyState.PlayerSpottedState:
                 PlayerSpottedStart();
-                break;       
+                break;
         }
     }
 
@@ -85,10 +86,10 @@ public class BasicEnemy : BaseEnemy
 
         Quaternion rotation = Quaternion.LookRotation(direction);
 
-        fishModel.rotation = Quaternion.Lerp(fishModel.rotation, rotation, rotationSpeed * Time.deltaTime);
+        _fishTransform.rotation = Quaternion.Lerp(_fishTransform.rotation, rotation, rotationSpeed * Time.deltaTime);
         transform.Translate(direction * fishSpeed * Time.deltaTime);
 
-        if (Vector3.Distance(transform.position, _endPosition) < 0.1f) 
+        if (Vector3.Distance(transform.position, _endPosition) < 0.1f)
         {
             _endPosition = SearchPosition();
         }
@@ -108,7 +109,7 @@ public class BasicEnemy : BaseEnemy
 
     private void PlayerSpottedStart()
     {
-        _fishPosition = FindFirstBoatPosition();
+        _fishPosition = FindRandomBoatPosition();
     }
 
     private void CheckIfCloseToBoat()
@@ -119,7 +120,7 @@ public class BasicEnemy : BaseEnemy
 
             StateChange(enemyState);
             _hasSpottedShip = true;
-        } 
+        }
     }
     private void HandlePlayerSpotted()
     {
@@ -128,7 +129,7 @@ public class BasicEnemy : BaseEnemy
 
         Quaternion rotation = Quaternion.LookRotation(direction);
 
-        fishModel.rotation = Quaternion.Lerp(fishModel.rotation, rotation, rotationSpeed * Time.deltaTime);
+        _fishTransform.rotation = Quaternion.Lerp(_fishTransform.rotation, rotation, rotationSpeed * Time.deltaTime);
         transform.Translate(direction * fishSpeed * Time.deltaTime);
 
         if (Vector3.Distance(transform.position, _fishPosition.position) < 0.3f)
@@ -205,18 +206,14 @@ public class BasicEnemy : BaseEnemy
     }
     private void StartArcAttack()
     {
-        _fishPosition = FindFirstBoatPosition();
+        _fishPosition = FindRandomBoatPosition();
         _isArcing = true;
     }
 
-    private Transform FindFirstBoatPosition()
-    {
-        int randomBoatSide = Random.Range(0, fishPositions.childCount);
-        
-        Transform returnPosition = fishPositions.GetChild(randomBoatSide);
-
-        return returnPosition;
+    private Transform FindRandomBoatPosition()
+    { 
+        return fishPositions.OrderBy(a => Vector3.Distance(a.position, _fishTransform.position)).FirstOrDefault();
     }
 
-  
+
 }

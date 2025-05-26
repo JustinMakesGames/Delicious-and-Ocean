@@ -18,6 +18,10 @@ public class Cooker : MonoBehaviour
     public void AssignFood(Food food)
     {
         _currentlyProcessingFood = food;
+        _currentlyProcessingFood.transform.SetParent(_processingFoodHolder);
+        _currentlyProcessingFood.transform.position = _processingFoodHolder.position;
+
+        _currentlyProcessingFood.OnFoodAssigned();
     }
 
     public void OnMorningArrived(int dayCount)

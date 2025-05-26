@@ -12,16 +12,16 @@ public static class DayTime
     public static int HourDurationInSeconds { private set; get; }
 
     [Tooltip("Called every (HourDurationInSeconds)")]
-    public static UnityEvent<int> OnHourPassed;
+    public static UnityEvent<int> OnHourPassed = new UnityEvent<int>();
 
     [Tooltip("Called when the hour hits zero")]
-    public static UnityEvent<int> OnMorningArrived;
+    public static UnityEvent<int> OnMorningArrived = new UnityEvent<int>();
 
     [Tooltip("Called when the hour hits (hoursTillNight / 2)")]
-    public static UnityEvent<int> OnNoonArrived;
+    public static UnityEvent<int> OnNoonArrived = new UnityEvent<int>();
 
     [Tooltip("Called when the hour hits (hoursTillNight)")]
-    public static UnityEvent<int> OnNightArrived;
+    public static UnityEvent<int> OnNightArrived = new UnityEvent<int>();
 
 
     [Tooltip("Initializes the Daytime, AKA prepares it to be able to be used.")]
@@ -29,11 +29,6 @@ public static class DayTime
     {
         CurrentHour = 0;
         CurrentDay = 0;
-
-        OnHourPassed = new UnityEvent<int>();
-        OnMorningArrived = new UnityEvent<int>();
-        OnNoonArrived = new UnityEvent<int>();
-        OnNightArrived = new UnityEvent<int>();
     }
 
     [Tooltip("The time regulator for the entire day and night system. The propagator of all events within the scene")]
