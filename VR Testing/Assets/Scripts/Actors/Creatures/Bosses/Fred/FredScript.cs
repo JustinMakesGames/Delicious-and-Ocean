@@ -44,6 +44,10 @@ public class Fred : BaseEnemy
     [Tooltip("The positions where the fish can jump over the boat")]
     [SerializeField] private List<Transform> fishLeftPositions;
     [SerializeField] private List<Transform> fishRightPositions;
+
+    [Header("Ball Variables")]
+    [SerializeField] private GameObject ball;
+    [SerializeField] private GameObject ballSpawnPosition;
     private bool _isArcing;
     private bool _isOnOtherSide;
 
@@ -175,6 +179,8 @@ public class Fred : BaseEnemy
             yield return null;
         }
 
+        float spawnTimer = 0;
+        float endSpawnTimer = 1;
         while (time < duration)
         {
             float t = time / duration;
@@ -184,6 +190,12 @@ public class Fred : BaseEnemy
 
             transform.position = midPoint;
 
+            spawnTimer += Time.deltaTime;
+
+            if (spawnTimer > endSpawnTimer)
+            {
+
+            }
             time += Time.deltaTime;
             yield return null;
         }
