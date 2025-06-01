@@ -47,7 +47,8 @@ public class Fred : BaseEnemy
 
     [Header("Ball Variables")]
     [SerializeField] private GameObject ball;
-    [SerializeField] private GameObject ballSpawnPosition;
+    [SerializeField] private Transform ballSpawnPosition;
+    [SerializeField] private Transform player;
     private bool _isArcing;
     private bool _isOnOtherSide;
 
@@ -194,7 +195,8 @@ public class Fred : BaseEnemy
 
             if (spawnTimer > endSpawnTimer)
             {
-
+                spawnTimer = 0;
+                ShootBall();
             }
             time += Time.deltaTime;
             yield return null;
@@ -218,6 +220,9 @@ public class Fred : BaseEnemy
             case 0:
                 StartArcAttack();
                 break;
+            case 1:
+                StartBreakingBoat();
+                break;
 
         }
     }
@@ -240,5 +245,23 @@ public class Fred : BaseEnemy
         }
     }
 
+    private void ShootBall()
+    {
+       GameObject ballClone =  Instantiate(ball, ballSpawnPosition.position, Quaternion.identity);
+       
+       Vector3 direction = (player.position - ballClone.transform.position).normalized;
+
+        Quaternion rotation = Quaternion.LookRotation(direction);
+
+        ballClone.transform.rotation = rotation;
+
+        ballClone.transform.GetComponent<BallBehaviour>().MakeAttackStats(attackPower);
+
+    }
+
+    private void StartBreakingBoat()
+    {
+        
+    }
 
 }
