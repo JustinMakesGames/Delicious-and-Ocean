@@ -152,11 +152,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: THEship
       objectReference: {fileID: 0}
+    - target: {fileID: 1020189128274572998, guid: bd8dbd05c722a02409e809898b12aca5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0acfdcd6e97188d4db3409664f0adae6, type: 2}
     - target: {fileID: 7191781963900004478, guid: bd8dbd05c722a02409e809898b12aca5,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 734c8b53a118ecc48803965725417c7d, type: 2}
+    - target: {fileID: 8422059700873216630, guid: bd8dbd05c722a02409e809898b12aca5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d8fb7fd0de26a4643bd77a5de4fe6c90, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
