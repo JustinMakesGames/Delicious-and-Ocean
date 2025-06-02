@@ -30,7 +30,7 @@ Material:
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 3000
   stringTagMap: {}
   disabledShaderPasses: []
   m_LockedProperties: 
@@ -115,17 +115,17 @@ Material:
     - _DstBlend: 0
     - _DstBlendAlpha: 0
     - _EnvironmentReflections: 1
-    - _FoamAmount: 1
+    - _FoamAmount: 0.01
     - _FoamCutOff: 1
     - _FoamScale: 100
     - _FoamSpeed: 0.1
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _HightFrequency: 11.4
+    - _HightFrequency: 12
     - _Metallic: 0
     - _MoveSpeed: 0
-    - _NormalStrength: 0.4
+    - _NormalStrength: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _QueueControl: 0
@@ -137,7 +137,7 @@ Material:
     - _RiplleDensity: 10
     - _RippleSlimness: 5
     - _RippleSpeed: 1
-    - _SmoothNess: 0.4
+    - _SmoothNess: 0.3
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -145,8 +145,8 @@ Material:
     - _SrcBlendAlpha: 1
     - _Surface: 0
     - _Waterdepth: 10
-    - _WaveAmplitude: 2
-    - _WaveSpeed: 2
+    - _WaveAmplitude: 1
+    - _WaveSpeed: 1
     - _WaveStrength: 37.59
     - _WorkflowMode: 1
     - _ZWrite: 1
@@ -154,12 +154,12 @@ Material:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DeepWater: {r: 0, g: 0.06055485, b: 0.3509434, a: 1}
-    - _Deepsurface: {r: 0, g: 0.30883765, b: 1, a: 0}
+    - _Deepsurface: {r: 0.29782128, g: 0.36935043, b: 0.82641506, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FoamColor: {r: 1, g: 1, b: 1, a: 0.8}
-    - _RefractionScale: {r: 3, g: 3, b: 0, a: 0}
+    - _RefractionScale: {r: 1, g: 1, b: 0, a: 0}
     - _RippleColor: {r: 0.83809894, g: 0.88651335, b: 0.98490566, a: 1}
     - _ShallowWater: {r: 0.6293698, g: 0.79408437, b: 0.8037735, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _SurfaceColor: {r: 0, g: 0.78867924, b: 0.78867924, a: 0}
+    - _SurfaceColor: {r: 0, g: 0.0634532, b: 1, a: 0}
   m_BuildTextureStacks: []
