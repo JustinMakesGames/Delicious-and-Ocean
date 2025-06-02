@@ -2,31 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpearBase : ActorBase
+public class SpearBase : WeaponActor
 {
-    [Header("Spear Stats")]
+    private bool _stickToTarget = false;
 
-    [Tooltip("The damage of the spear")]
-    public int spearDamage;
-
-    protected override void Init()
-    {
-        base.Init();
-        if (_actorStatsSO)
-        {
-            spearDamage = _actorStatsSO.startDamage;
-        }
-        else
-        {
-            print("No actorStatsSO assigned to the spear, so no damage");
-        }
-    }
     //Test function to test whether or not damaging an actor works
     public void OnTriggerEnter(Collider collision)
     {
         if (collision.TryGetComponent<IDamagable>(out IDamagable damagable))
         {
-            damagable.OnDamageTaken(spearDamage);
+            damagable.OnDamageTaken(WeaponDamage());
+            if (_stickToTarget)
+            {
+                GetComponent<Rigidbody>().isKinematic = false;
+                transform.SetParent(collision.transform);
+                return;
+            }
+            print("Hit " + collision.name + " with spear, dealing " + WeaponDamage() + " damage");
+            Destroy(gameObject);
         }
     }
 }

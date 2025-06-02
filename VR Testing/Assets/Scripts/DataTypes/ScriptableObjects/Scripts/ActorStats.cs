@@ -16,4 +16,6 @@ public class ActorStats : ScriptableObject
 
     [Tooltip("The starting state of the actor, whether the actor can or cannot be hurt. ")]
     public ImmunityState startState;
+
+    public DamageType damageType;
 }

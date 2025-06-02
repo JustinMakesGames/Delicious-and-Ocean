@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b30e3b4ad84a12341a1f0099e2eed1f8, type: 3}
-  m_Name: Plain
+  m_Script: {fileID: 11500000, guid: bce0bbdfcad061f47a482e97902e6491, type: 3}
+  m_Name: Cannon
   m_EditorClassIdentifier: 
-  objects:
-  - GO: {fileID: 11400000, guid: b2b9a22e78a83504e99c3f306d07ed76, type: 2}
-    chance: 100
+  maxHealth: 0
+  startDamage: 50
+  startState: 1

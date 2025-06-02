@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b30e3b4ad84a12341a1f0099e2eed1f8, type: 3}
-  m_Name: Plain
+  m_Script: {fileID: 11500000, guid: 137e73b707bb21c46a8451783299a1cd, type: 3}
+  m_Name: Island(Moon)
   m_EditorClassIdentifier: 
-  objects:
-  - GO: {fileID: 11400000, guid: b2b9a22e78a83504e99c3f306d07ed76, type: 2}
-    chance: 100
+  objectGO: {fileID: 2779396961242136169, guid: 00df75922bb5a3e4cbe976de829d9022,
+    type: 3}
+  setRelativeObjectPos: {x: 0, y: 0, z: 0}
+  relativeObjectAdditivePos: {x: 0, y: 0, z: 0}

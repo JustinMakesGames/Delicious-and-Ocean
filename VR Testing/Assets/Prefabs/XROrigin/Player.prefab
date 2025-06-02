@@ -625,7 +625,7 @@ GameObject:
   - component: {fileID: 14012198013532489}
   - component: {fileID: 6250180896437565913}
   m_Layer: 7
-  m_Name: XR Origin (XR Rig) (1)
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1346,6 +1346,37 @@ MonoBehaviour:
   hp: 100
   maxhp: 100
   hpBar: {fileID: 0}
+--- !u!1 &1761323391651202510
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6014510145394577868}
+  m_Layer: 7
+  m_Name: ItemHolder(left)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6014510145394577868
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1761323391651202510}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.015, y: -0.04, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1786033485053868754}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2047003124238552203
 GameObject:
   m_ObjectHideFlags: 0
@@ -3079,6 +3110,7 @@ GameObject:
   - component: {fileID: 8546571334696855435}
   - component: {fileID: 7297157715701288699}
   - component: {fileID: 6952330403128838161}
+  - component: {fileID: 8413389288548314993}
   - component: {fileID: 1847107457947468727}
   m_Layer: 7
   m_Name: Right Controller
@@ -3469,6 +3501,25 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8413389288548314993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6187242346399788043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d8ab97b279c63846b40d4075f00b0e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  settings: {fileID: 11400000, guid: 98f50e3878fa9b24d99b2d058c718e16, type: 2}
+  rayTransform: {fileID: 4484112651642962964}
+  overlapSphereTransform: {fileID: 4843476270352419265}
+  heldItemHolder: {fileID: 1961393509630235876}
+  isHoldingObject: 0
+  objectSelected: 0
+  frameAmount: 15
 --- !u!114 &1847107457947468727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3481,8 +3532,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 828e369561fa79e46997002ef1e496ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  handType: 0
-  interactionController: {fileID: 0}
+  handType: 1
+  interactionController: {fileID: 8413389288548314993}
 --- !u!1 &6308662796248572905
 GameObject:
   m_ObjectHideFlags: 0
@@ -3673,6 +3724,7 @@ Transform:
   m_Children:
   - {fileID: 7605196378747372699}
   - {fileID: 8736993170139767755}
+  - {fileID: 1961393509630235876}
   m_Father: {fileID: 4843476270352419265}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!95 &7039736268920903586
@@ -3747,6 +3799,8 @@ GameObject:
   - component: {fileID: 639857849010045110}
   - component: {fileID: 6188303279309381090}
   - component: {fileID: 2604305063067407722}
+  - component: {fileID: 3801961703700179657}
+  - component: {fileID: 353230769249878306}
   m_Layer: 7
   m_Name: Left Controller
   m_TagString: Untagged
@@ -3768,6 +3822,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1205210816299174562}
+  - {fileID: 6014510145394577868}
   m_Father: {fileID: 4902924638687747986}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5010398212820131144
@@ -4136,6 +4191,39 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3801961703700179657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7586506364082017644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d8ab97b279c63846b40d4075f00b0e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  settings: {fileID: 11400000, guid: 98f50e3878fa9b24d99b2d058c718e16, type: 2}
+  rayTransform: {fileID: 1299118544248087527}
+  overlapSphereTransform: {fileID: 1786033485053868754}
+  heldItemHolder: {fileID: 1786033485053868754}
+  isHoldingObject: 0
+  objectSelected: 0
+  frameAmount: 15
+--- !u!114 &353230769249878306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7586506364082017644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 828e369561fa79e46997002ef1e496ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 0
+  interactionController: {fileID: 3801961703700179657}
 --- !u!1 &7673248758063471900
 GameObject:
   m_ObjectHideFlags: 0
@@ -4985,6 +5073,37 @@ Transform:
   - {fileID: 2763300526476378477}
   - {fileID: 4828782213717269635}
   m_Father: {fileID: 6187938871494071607}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8487338817693046723
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1961393509630235876}
+  m_Layer: 7
+  m_Name: ItemHolder(right)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1961393509630235876
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8487338817693046723}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.04, y: 0.015, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1339514140731969344}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8507319890593615772
 GameObject:

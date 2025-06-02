@@ -27,7 +27,7 @@ public class WorldPool : MonoBehaviour
         {
             Transform fish = CalculateClosestFish(other.transform);
             _fishList.Remove(fish);
-            fish.GetComponent<ActorBase>().OnDamageTaken(other.GetComponent<SpearBase>().spearDamage);
+            fish.GetComponent<ActorBase>().OnDamageTaken(other.GetComponent<WeaponActor>().WeaponDamage(), DamageType.Physical);
         }
     }
 

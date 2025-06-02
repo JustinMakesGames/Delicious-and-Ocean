@@ -49,6 +49,7 @@ public class BoatMovement : MonoBehaviour
     private void Awake()
     {
         _rb = GetComponent<Rigidbody>();
+        acceleration = 0;
         if (movementType == BoatMovementType.Automatic)
         {
             foreach (Transform point in _wayPoints)
@@ -93,7 +94,6 @@ public class BoatMovement : MonoBehaviour
     {
         float leverAngle = NormalizeAngle(lever.eulerAngles.z);
         float speed = leverAngle / 10;
-
 
         _rb.velocity = transform.forward * acceleration * speedMultiplier * Time.fixedDeltaTime;
 
@@ -166,6 +166,8 @@ public class BoatMovement : MonoBehaviour
 
     private IEnumerator MoveAlongPath()
     {
+        print("Started following waypoints");
+
         acceleration = speedMultiplier * automaticSpeedMultiplier;
         if (_wayPointQueue.Count == 0 || _rb == null) yield return null;
 

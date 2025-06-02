@@ -16,8 +16,8 @@ public class ActorBase : MonoBehaviour, IDamagable
     [Tooltip("The Immunity state of the actor, whether it can, or cannot be hurt")]
     [SerializeField] protected ImmunityState _currentState;
 
-    [Tooltip("This is what kind of food will drop out of this actor")]
-    [SerializeField] private List<GameObject> possibleFoodOutcome;
+    [Tooltip("This is what kind of drops may be gained out of this actor")]
+    [SerializeField] private List<GameObject> _possibleDrops;
 
     //Standard unity awake
     protected virtual void Awake()
@@ -38,7 +38,7 @@ public class ActorBase : MonoBehaviour, IDamagable
     }
 
     //This function is called when the actor takes damage
-    public virtual void OnDamageTaken(int damage)
+    public virtual void OnDamageTaken(int damage, DamageType dmgType)
     {
         if(_currentState == ImmunityState.Vulnerable)
         {
@@ -59,6 +59,6 @@ public class ActorBase : MonoBehaviour, IDamagable
 
     private void SpawnFood()
     {
-        FoodHandler.Instance.GetSomeFood(possibleFoodOutcome, transform);
+        FoodHandler.Instance.GetSomeFood(_possibleDrops, transform);
     }
 }

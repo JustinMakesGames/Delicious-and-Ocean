@@ -14,9 +14,9 @@ public class BaseEnemy : ActorBase, IDamagable
         color = myRenderer.material.color;
         attackPower = _actorStatsSO.startDamage;
     }
-    public override void OnDamageTaken(int damage)
+    public override void OnDamageTaken(int damage, DamageType dmgType)
     {
-        base.OnDamageTaken(damage);
+        base.OnDamageTaken(damage, dmgType);
         StartCoroutine(ShowDamageTaken());
     }
     private IEnumerator ShowDamageTaken()
