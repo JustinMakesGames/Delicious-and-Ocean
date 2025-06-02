@@ -1330,6 +1330,7 @@ MonoBehaviour:
   foodLocation: {fileID: 0}
   foodCanvas: {fileID: 0}
   foodBarSlider: {fileID: 0}
+  damageInterval: 0
 --- !u!114 &6250180896437565913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3078,6 +3079,7 @@ GameObject:
   - component: {fileID: 8546571334696855435}
   - component: {fileID: 7297157715701288699}
   - component: {fileID: 6952330403128838161}
+  - component: {fileID: 1847107457947468727}
   m_Layer: 7
   m_Name: Right Controller
   m_TagString: Untagged
@@ -3467,6 +3469,20 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1847107457947468727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6187242346399788043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 828e369561fa79e46997002ef1e496ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 0
+  interactionController: {fileID: 0}
 --- !u!1 &6308662796248572905
 GameObject:
   m_ObjectHideFlags: 0
