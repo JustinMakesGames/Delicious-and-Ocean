@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 using Random = UnityEngine.Random;
 public enum EnemyState
@@ -44,6 +45,8 @@ public class Fred : BaseEnemy
     [Tooltip("The positions where the fish can jump over the boat")]
     [SerializeField] private List<Transform> fishLeftPositions;
     [SerializeField] private List<Transform> fishRightPositions;
+    [SerializeField] private float animationEndingInterval;
+    [SerializeField] private float attackInterval;
 
     [Header("Ball Variables")]
     [SerializeField] private GameObject ball;
@@ -133,6 +136,13 @@ public class Fred : BaseEnemy
     }
     private void HandlePlayerSpotted()
     {
+
+        
+        HandleArcing();
+    }
+
+    private void HandleArcing()
+    {
         if (_isArcing) return;
         Vector3 direction = (_fishPosition.position - transform.position).normalized;
 
@@ -141,7 +151,7 @@ public class Fred : BaseEnemy
         _fishTransform.rotation = Quaternion.Lerp(_fishTransform.rotation, rotation, rotationSpeed * Time.deltaTime);
         transform.Translate(direction * fishSpeed * Time.deltaTime);
 
-        if (Vector3.Distance(transform.position, _fishPosition.position) < 0.3f)
+        if (Vector3.Distance(transform.position, _fishPosition.position) < 0.5f)
         {
             Transform endPosition = _fishPosition.GetChild(0);
             Vector3 directionToLook = (endPosition.position - transform.position).normalized;
@@ -202,14 +212,49 @@ public class Fred : BaseEnemy
             yield return null;
         }
 
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(animationEndingInterval);
 
+        int newPositionIndex = _fishPosition.GetSiblingIndex();
+
+        Transform newPosition = null;
+
+        //This chooses a side where to wait
+        if (!_isOnOtherSide)
+        {
+            newPosition = fishLeftPositions[newPositionIndex];
+        }
+        else
+        {
+            newPosition = fishRightPositions[newPositionIndex];
+        }
+        while (Vector3.Distance(transform.position, newPosition.position) > 0.1f)
+        {
+            Vector3 direction = (newPosition.position - transform.position).normalized;
+
+            transform.Translate(direction * fishSpeed * Time.deltaTime);
+
+            
+
+            yield return null;
+        }
+
+        float timer = 0;
+        float endTimer = 4;
+
+        while (timer < endTimer)
+        {
+            timer += Time.deltaTime;
+            _fishTransform.rotation = boat.rotation;
+            
+            yield return null;
+        }
+
+        
         transform.parent = null;
 
         _isOnOtherSide = !_isOnOtherSide;
         ChooseNextAttack();
     }
-
     //Choosing what the next attack is, there is only one now so you can make the next one.
     private void ChooseNextAttack()
     {
@@ -219,9 +264,6 @@ public class Fred : BaseEnemy
         {
             case 0:
                 StartArcAttack();
-                break;
-            case 1:
-                StartBreakingBoat();
                 break;
 
         }
@@ -247,7 +289,7 @@ public class Fred : BaseEnemy
 
     private void ShootBall()
     {
-       GameObject ballClone =  Instantiate(ball, ballSpawnPosition.position, Quaternion.identity);
+       GameObject ballClone =  Instantiate(ball, ballSpawnPosition.position, Quaternion.identity, boat);
        
        Vector3 direction = (player.position - ballClone.transform.position).normalized;
 
@@ -257,11 +299,6 @@ public class Fred : BaseEnemy
 
         ballClone.transform.GetComponent<BallBehaviour>().MakeAttackStats(attackPower);
 
-    }
-
-    private void StartBreakingBoat()
-    {
-        
     }
 
 }

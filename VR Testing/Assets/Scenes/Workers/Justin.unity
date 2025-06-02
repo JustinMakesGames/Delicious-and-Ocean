@@ -758,37 +758,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2663109448541190782}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &240297208
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 240297209}
-  m_Layer: 0
-  m_Name: Waypoint (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &240297209
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 240297208}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 418, y: 0, z: -124}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 965218481}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &253845456
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2456,17 +2425,17 @@ PrefabInstance:
     - target: {fileID: 1681745301592247741, guid: e72e55c605b688441a7f39c93dfd4c80,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.40602
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1681745301592247741, guid: e72e55c605b688441a7f39c93dfd4c80,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.40602
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1681745301592247741, guid: e72e55c605b688441a7f39c93dfd4c80,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.40602
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1681745301592247741, guid: e72e55c605b688441a7f39c93dfd4c80,
         type: 3}
@@ -4547,7 +4516,6 @@ Transform:
   m_Children:
   - {fileID: 1367087464}
   - {fileID: 1378593394}
-  - {fileID: 240297209}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1087697790
@@ -5462,7 +5430,7 @@ Transform:
   m_GameObject: {fileID: 1367087463}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -78.7, y: 0, z: -188.3}
+  m_LocalPosition: {x: -17.5, y: 0, z: 26.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5493,7 +5461,7 @@ Transform:
   m_GameObject: {fileID: 1378593393}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 85.2, y: 0, z: -334.3}
+  m_LocalPosition: {x: -64.5, y: 0, z: -154.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6688,6 +6656,8 @@ MonoBehaviour:
   - {fileID: 211726111}
   - {fileID: 2042137177}
   - {fileID: 769444473}
+  animationEndingInterval: 0
+  attackInterval: 0
   ball: {fileID: 4255234893958298577, guid: 94d4dceef8dc7ef4e9962cd44b4e56cf, type: 3}
   ballSpawnPosition: {fileID: 1283619054}
   player: {fileID: 1454122983}
@@ -7462,17 +7432,17 @@ PrefabInstance:
     - target: {fileID: 4012309037916072543, guid: 5561957018e852a4ea78a04a7ec2a0ab,
         type: 3}
       propertyPath: _wayPoints.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4012309037916072543, guid: 5561957018e852a4ea78a04a7ec2a0ab,
         type: 3}
       propertyPath: _wayPointOffsetWidth.x
-      value: -10
+      value: -40
       objectReference: {fileID: 0}
     - target: {fileID: 4012309037916072543, guid: 5561957018e852a4ea78a04a7ec2a0ab,
         type: 3}
       propertyPath: _wayPointOffsetWidth.y
-      value: 10
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 4012309037916072543, guid: 5561957018e852a4ea78a04a7ec2a0ab,
         type: 3}
@@ -7488,7 +7458,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _wayPoints.Array.data[2]
       value: 
-      objectReference: {fileID: 240297209}
+      objectReference: {fileID: 0}
     - target: {fileID: 4012309037916072543, guid: 5561957018e852a4ea78a04a7ec2a0ab,
         type: 3}
       propertyPath: automaticSpeedMultiplier
@@ -7502,7 +7472,7 @@ PrefabInstance:
     - target: {fileID: 4012309037916072543, guid: 5561957018e852a4ea78a04a7ec2a0ab,
         type: 3}
       propertyPath: _wayPointOffsetLengthMinMax.y
-      value: 200.3
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 6435935423516728981, guid: 5561957018e852a4ea78a04a7ec2a0ab,
         type: 3}

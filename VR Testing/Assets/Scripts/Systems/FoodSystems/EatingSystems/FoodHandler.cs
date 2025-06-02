@@ -19,6 +19,7 @@ public class FoodHandler : MonoBehaviour
     [SerializeField] private GameObject foodCanvas;
 
     [SerializeField] private Slider foodBarSlider;
+    [SerializeField] private float damageInterval;
     private Bounds _foodLocationBounds;
     private float _foodBar;
 
@@ -60,7 +61,7 @@ public class FoodHandler : MonoBehaviour
     {
         while (_hasNoFood)
         {
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(damageInterval);
             playerStats.TakeDamage(damage);
         }
     }
