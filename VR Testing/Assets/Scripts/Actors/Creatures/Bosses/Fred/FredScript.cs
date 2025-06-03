@@ -2,7 +2,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
+using UnityEditor.PackageManager;
 using UnityEngine;
 using Random = UnityEngine.Random;
 public enum EnemyState
@@ -54,6 +56,12 @@ public class Fred : BaseEnemy
     [SerializeField] private Transform player;
     private bool _isArcing;
     private bool _isOnOtherSide;
+
+    [Header("Baller Attack")]
+    [SerializeField] private GameObject throwingBall;
+    [SerializeField] private Transform ballerPosition;
+    [SerializeField] private float ballInterval;
+    private bool _isUsingBallAttack;
 
     protected override void Awake()
     {
@@ -137,7 +145,7 @@ public class Fred : BaseEnemy
     private void HandlePlayerSpotted()
     {
 
-        
+
         HandleArcing();
     }
 
@@ -233,7 +241,7 @@ public class Fred : BaseEnemy
 
             transform.Translate(direction * fishSpeed * Time.deltaTime);
 
-            
+
 
             yield return null;
         }
@@ -245,11 +253,11 @@ public class Fred : BaseEnemy
         {
             timer += Time.deltaTime;
             _fishTransform.rotation = boat.rotation;
-            
+
             yield return null;
         }
 
-        
+
         transform.parent = null;
 
         _isOnOtherSide = !_isOnOtherSide;
@@ -258,12 +266,15 @@ public class Fred : BaseEnemy
     //Choosing what the next attack is, there is only one now so you can make the next one.
     private void ChooseNextAttack()
     {
-        int randomAttack = 0;
+        int randomAttack = 1;
 
         switch (randomAttack)
         {
             case 0:
                 StartArcAttack();
+                break;
+            case 1:
+                StartBallingAttack();
                 break;
 
         }
@@ -289,9 +300,9 @@ public class Fred : BaseEnemy
 
     private void ShootBall()
     {
-       GameObject ballClone =  Instantiate(ball, ballSpawnPosition.position, Quaternion.identity, boat);
-       
-       Vector3 direction = (player.position - ballClone.transform.position).normalized;
+        GameObject ballClone = Instantiate(ball, ballSpawnPosition.position, Quaternion.identity, boat);
+
+        Vector3 direction = (player.position - ballClone.transform.position).normalized;
 
         Quaternion rotation = Quaternion.LookRotation(direction);
 
@@ -301,4 +312,57 @@ public class Fred : BaseEnemy
 
     }
 
+    private void StartBallingAttack()
+    {
+        _isUsingBallAttack = true;
+
+        StartCoroutine(BallerAttack());
+    }
+
+    private IEnumerator BallerAttack()
+    {
+        transform.parent = boat;
+        while (Vector3.Distance(transform.position, ballerPosition.position) > 0.5f)
+        {
+
+            ballerPosition.transform.rotation = DirectionToLook(ballerPosition.position);
+
+            transform.Translate(Vector3.forward * fishSpeed * Time.deltaTime);
+
+            yield return null;
+        }
+
+        StartCoroutine(LookAtBoat());
+        StartCoroutine(ThrowBalls());
+    }
+
+    private Quaternion DirectionToLook(Vector3 directionToLook)
+    {
+        Vector3 direction = (directionToLook - transform.position).normalized;
+        Quaternion rotation = Quaternion.LookRotation(direction);
+
+        return rotation;
+    }
+    private IEnumerator LookAtBoat()
+    {
+        float time = 0;
+
+        while (time < ballInterval)
+        {
+            time += Time.deltaTime;
+            transform.rotation = DirectionToLook(boat.position);
+            yield return null;
+        }
+        
+    }
+
+    private IEnumerator ThrowBalls()
+    {
+        while (true)
+        {
+            Instantiate(throwingBall, ballSpawnPosition.position, Quaternion.identity);
+            yield return new WaitForSeconds(2);
+        }
+        
+    }
 }
