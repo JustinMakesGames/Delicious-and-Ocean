@@ -15,6 +15,10 @@ public class TimeEventManager : MonoBehaviour
     public UnityEvent<int> OnMinutePassed = new UnityEvent<int>();
 
     [SerializeField] private bool _debugValues;
+
+    //This is set to false on uneven days, so the bossfights can happen
+    public bool continueTimeRegulation = true;
+
     private void Awake()
     {
         if (Instance == null)
@@ -41,26 +45,40 @@ public class TimeEventManager : MonoBehaviour
         var curDay = 0;
         var curSecond = 0;
         var curMinute = 0;
+
         while (true)
         {
-            //Can be a hardcoded value for the increment, dont whine. its a second, why the hell would you input anything else then a second
-            yield return new WaitForSeconds(1f);
-            curSecond++;
-
-            OnSecondPassed.Invoke(curSecond);
-            if (curSecond >= _minuteDurationInSeconds)
+            while (continueTimeRegulation)
             {
-                curSecond = 0;
-                curMinute++;
-                OnMinutePassed.Invoke(curMinute);
-            }
-            if (curMinute >= _dayDurationInMinutes)
-            {
-                curMinute = 0;
-                curDay++;
-                OnDayEnd.Invoke(curDay);
-            }
+                //Can be a hardcoded value for the increment, dont whine. its a second, why the hell would you input anything else then a second
+                yield return new WaitForSeconds(1f);
+                curSecond++;
 
+                OnSecondPassed.Invoke(curSecond);
+
+                if (curSecond >= _minuteDurationInSeconds)
+                {
+                    curSecond = 0;
+                    curMinute++;
+                    OnMinutePassed.Invoke(curMinute);
+                }
+
+                if (curMinute >= _dayDurationInMinutes)
+                {
+                    curMinute = 0;
+                    curDay++;
+                    OnDayEnd.Invoke(curDay);
+
+                    // Stop time regulation on uneven days, to do the bossfight
+                    if (curDay % 2 != 0)
+                    {
+                        continueTimeRegulation = false;
+                        if (_debugValues) DebugPrint($"Time regulation stopped for day {curDay}, BossFight time!", DebugType.warning);
+                    }
+                }
+
+            }
+            yield return new WaitForEndOfFrame();
         }
     }
     #region Debug Methods

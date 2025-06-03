@@ -9201,12 +9201,10 @@ MonoBehaviour:
   steeringWheel: {fileID: 2729090171923729066}
   divideRotation: 20
   automaticSpeedMultiplier: 0.005
-  _wayPoints:
-  - {fileID: 0}
-  - {fileID: 0}
   _wayPointOffsetWidth: {x: -40, y: 40}
   _wayPointOffsetLengthMinMax: {x: 100, y: 200}
   tiltIntensity: 40
+  _wayPointCount: 2
 --- !u!65 &7740981235453876484
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9251,6 +9249,7 @@ MonoBehaviour:
   _objectGenerator: {fileID: 11400000, guid: 514b03a84f0780c4eb2ea1265faab325, type: 2}
   _generationObjectCount: 25
   _chunkDimensions: 0
+  _chunkHolder: {fileID: 0}
 --- !u!65 &3643394575880367132
 BoxCollider:
   m_ObjectHideFlags: 0

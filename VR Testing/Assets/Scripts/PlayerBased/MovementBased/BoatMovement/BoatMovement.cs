@@ -28,29 +28,48 @@ public class BoatMovement : MonoBehaviour
     [SerializeField] private float divideRotation;
 
     [Header("Automatic Variables")]
+    [SerializeField] private float _automaticTurnSpeed;
     [SerializeField] private float automaticSpeedMultiplier;
-    [SerializeField] private Transform[] _wayPoints;
     private Queue<Transform> _wayPointQueue = new Queue<Transform>();
     [SerializeField] private Vector2 _wayPointOffsetWidth;
     [SerializeField] private Vector2 _wayPointOffsetLengthMinMax;
     private Transform _lastPlacedWaypoint;
     [SerializeField] private float tiltIntensity;
-
+    [SerializeField] private int _wayPointCount = 2; //Atleast need 2 otherwise it no workie
     private void Awake()
+    {
+        TimeEventManager.Instance.OnDayEnd.AddListener(InitBoat);
+    }
+    private void Start()
+    {
+        InitBoat(0);
+    }
+
+    private void InitBoat(int currentDay)
     {
         acceleration = 0;
 
+        if (ShouldSwitch(currentDay))
+        {
+            movementType = BoatMovementType.Automatic;
+        }
+        else
+        {
+            movementType = BoatMovementType.Manual;
+        }
+
         if (movementType == BoatMovementType.Automatic)
         {
-            foreach (Transform point in _wayPoints)
-            {
-                _wayPointQueue.Enqueue(point);
-            }
-            _lastPlacedWaypoint = _wayPoints[_wayPoints.Length - 1];
+            CreateNewWaypoints(_wayPointCount);
             StartCoroutine(MoveAlongPath());
         }
     }
 
+    private bool ShouldSwitch(int day)
+    {
+        print(day % 2 != 0);
+        return day % 2 != 0;
+    }
     #region Manual
     private void FixedUpdate()
     {
@@ -126,6 +145,28 @@ public class BoatMovement : MonoBehaviour
     #endregion
 
     #region Automatic
+
+    private void ClearWaypoints()
+    {
+        foreach (Transform wayPoint in _wayPointQueue)
+        {
+            Destroy(wayPoint.gameObject);
+        }
+        _wayPointQueue.Clear();
+    }
+
+    private void CreateNewWaypoints(int count)
+    {
+        ClearWaypoints();
+        _lastPlacedWaypoint = transform;
+        for (int i = 0; i < count; i++)
+        {
+            Transform newWayPoint = new GameObject().transform;
+            AssignNewWaypointPosition(newWayPoint);
+            _wayPointQueue.Enqueue(newWayPoint);
+        }
+
+    }
     private void AssignNewWaypointPosition(Transform wayPoint)
     {
         wayPoint.position = _lastPlacedWaypoint.position + new Vector3(
@@ -138,34 +179,54 @@ public class BoatMovement : MonoBehaviour
 
     private IEnumerator MoveAlongPath()
     {
+        print("Started following waypoints");
+
         acceleration = speedMultiplier * automaticSpeedMultiplier;
         if (_wayPointQueue.Count == 0) yield break;
 
         while (movementType == BoatMovementType.Automatic && _wayPointQueue.Count > 0)
         {
             var wayPoint = _wayPointQueue.Peek();
+
             while (Vector3.Distance(transform.position, wayPoint.position) > 1f)
             {
                 Vector3 direction = (wayPoint.position - transform.position).normalized;
+                Debug.Log("Direction: " + direction);
 
                 transform.position += direction * acceleration * Time.deltaTime * speedMultiplier * automaticSpeedMultiplier;
 
                 Quaternion targetRotation = Quaternion.LookRotation(wayPoint.position - transform.position);
+
+                Debug.Log("Target rotation before banking: " + targetRotation.eulerAngles);
+                Debug.Log("Current rotation: " + transform.rotation.eulerAngles);
+
                 Vector3 cross = Vector3.Cross(transform.forward, direction);
                 float tiltAmount = Mathf.Clamp(cross.y, -1f, 1f) * tiltIntensity;
-                Quaternion bankRotation = targetRotation * Quaternion.Euler(0, 0, -tiltAmount);
+                Debug.Log("Tilt amount: " + tiltAmount);
 
-                transform.rotation = Quaternion.Slerp(transform.rotation, bankRotation, turnSpeed * Time.deltaTime);
+                Quaternion bankRotation = targetRotation * Quaternion.Euler(0, 0, -tiltAmount);
+                print(bankRotation);
+                // Try direct rotation first to check if rotation changes:
+                // transform.rotation = targetRotation;
+
+                // Use Slerp for smooth rotation with banking:
+                transform.rotation = Quaternion.Slerp(transform.rotation, bankRotation, _automaticTurnSpeed * Time.deltaTime);
+
+                Debug.Log("New rotation after slerp: " + transform.rotation.eulerAngles);
 
                 yield return new WaitForFixedUpdate();
             }
 
+            _wayPointQueue.Dequeue();
+
             AssignNewWaypointPosition(wayPoint);
             _wayPointQueue.Enqueue(wayPoint);
-            _wayPointQueue.Dequeue();
 
             yield return new WaitForFixedUpdate();
         }
     }
+
+
+
     #endregion
 }
