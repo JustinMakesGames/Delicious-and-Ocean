@@ -33,9 +33,18 @@ public class SeaGenerator : MonoBehaviour
     [Tooltip("The X*X amount of chunks generated around the SeaGenerator")]
     [SerializeField] private int _chunkDimensions;
 
+    [SerializeField] private Transform _chunkHolder;
     private void Awake()
     {
         _seed = _seed == 0 ? Random.Range(int.MinValue, int.MaxValue) : _seed;
+        Vector3Int newChunkPosition = new Vector3Int(Mathf.FloorToInt(transform.position.x / _chunkSize), 0, Mathf.FloorToInt(transform.position.z / _chunkSize));
+
+        _currentChunkPosition = newChunkPosition;
+
+        GenerateChunks(_currentChunkPosition);
+
+        CleanUpChunks();
+
     }
 
     private void Update()
@@ -75,7 +84,7 @@ public class SeaGenerator : MonoBehaviour
             // Instantiate the chunk
             GameObject chunk = Instantiate(_chunkPrefab);
             chunk.transform.position = chunkPosition * _chunkSize;
-
+            chunk.transform.parent = _chunkHolder;
             chunk.GetComponent<Chunk>().Init(_waterPrefab, _chunkSize, _objectGenerator, _generationObjectCount, _seed);
 
             _chunks.Add(chunk);
