@@ -7,4 +7,5 @@ public class FoodScriptableObject : ScriptableObject
 {
     public float foodRefillAmount;
     public int hpFillAmount;
+    public int price;
 }

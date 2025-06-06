@@ -7083,7 +7083,7 @@ Transform:
   m_Children:
   - {fileID: 779373828823641926}
   - {fileID: 760232705268482203}
-  m_Father: {fileID: 6949504599360588923}
+  m_Father: {fileID: 3061869680998579478}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8190304341806621374
 GameObject:
@@ -7680,7 +7680,6 @@ Transform:
   - {fileID: 9032596528802989675}
   - {fileID: 6435935423516728981}
   - {fileID: 3875053041839390301}
-  - {fileID: 5007804638959481456}
   - {fileID: 9057207980720608197}
   - {fileID: 1309816912663667341}
   m_Father: {fileID: 3061869680998579478}
@@ -9118,6 +9117,10 @@ PrefabInstance:
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: bd8dbd05c722a02409e809898b12aca5,
         type: 3}
+      insertIndex: 0
+      addedObject: {fileID: 5007804638959481456}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: bd8dbd05c722a02409e809898b12aca5,
+        type: 3}
       insertIndex: -1
       addedObject: {fileID: 4906946283665085522}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: bd8dbd05c722a02409e809898b12aca5,
@@ -9200,6 +9203,7 @@ MonoBehaviour:
   lever: {fileID: 5650824672433653372}
   steeringWheel: {fileID: 2729090171923729066}
   divideRotation: 20
+  _automaticTurnSpeed: 0
   automaticSpeedMultiplier: 0.005
   _wayPointOffsetWidth: {x: -40, y: 40}
   _wayPointOffsetLengthMinMax: {x: 100, y: 200}

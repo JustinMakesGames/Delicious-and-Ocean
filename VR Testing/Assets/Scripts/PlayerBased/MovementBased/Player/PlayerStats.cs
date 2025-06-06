@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class PlayerStats : MonoBehaviour
 {
+    public int coins;
     [SerializeField] private int hp;
     [SerializeField] private int maxhp;
     [SerializeField] private Slider hpBar;
@@ -29,5 +30,10 @@ public class PlayerStats : MonoBehaviour
     public void Die()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void SellItem(int price)
+    {
+        coins += price;
     }
 }

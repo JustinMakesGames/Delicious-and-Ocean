@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
@@ -24,6 +25,7 @@ public class Food : MonoBehaviour
 {
     [SerializeField] private FoodScriptableObject foodStats;
 
+    public int price;
     private float _refillAmount;
     private int _hpFillAmount;
 
@@ -33,6 +35,7 @@ public class Food : MonoBehaviour
         if (!foodStats) return;
         _refillAmount = foodStats.foodRefillAmount;
         _hpFillAmount = foodStats.hpFillAmount;
+        price = foodStats.price;
     }
 
     #region Cooking

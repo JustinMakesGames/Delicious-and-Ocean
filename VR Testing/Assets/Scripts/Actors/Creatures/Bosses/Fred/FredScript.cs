@@ -63,10 +63,28 @@ public class Fred : BaseEnemy
     [SerializeField] private float ballInterval;
     private bool _isUsingBallAttack;
 
+
+
     protected override void Awake()
     {
         base.Awake();
+        boat = FindObjectOfType<BoatMovement>().transform;
+        animator = GetComponentInChildren<Animator>();
+
+        
         _fishTransform = transform.GetChild(0);
+
+        AddChildren(boat.GetChild(0).GetChild(0), fishRightPositions);
+        AddChildren(boat.GetChild(0).GetChild(1), fishLeftPositions);
+
+    }
+
+    private void AddChildren(Transform t, List<Transform> tList)
+    {
+        for (int i = 0; i < t.childCount; i++)
+        {
+            tList.Add(t.GetChild(i));
+        }
     }
 
     protected void Start()
@@ -266,7 +284,7 @@ public class Fred : BaseEnemy
     //Choosing what the next attack is, there is only one now so you can make the next one.
     private void ChooseNextAttack()
     {
-        int randomAttack = 1;
+        int randomAttack = 0;
 
         switch (randomAttack)
         {
