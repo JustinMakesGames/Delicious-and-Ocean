@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class TimeEventManager : MonoBehaviour
 {
-    public static TimeEventManager Instance { get; private set; }
+    public static TimeEventManager Instance;
 
     [SerializeField] private int _dayDurationInMinutes;
     [SerializeField] private int _minuteDurationInSeconds = 60;

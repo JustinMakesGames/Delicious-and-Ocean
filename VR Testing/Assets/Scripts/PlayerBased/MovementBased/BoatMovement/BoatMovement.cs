@@ -5,7 +5,8 @@ using UnityEngine;
 public enum BoatMovementType
 {
     Manual,
-    Automatic
+    Automatic,
+    disabled
 }
 
 public class BoatMovement : MonoBehaviour

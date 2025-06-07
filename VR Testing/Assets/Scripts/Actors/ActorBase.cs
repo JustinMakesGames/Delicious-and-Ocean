@@ -40,7 +40,7 @@ public class ActorBase : MonoBehaviour, IDamagable
     //This function is called when the actor takes damage
     public virtual void OnDamageTaken(int damage, DamageType dmgType)
     {
-        if(_currentState == ImmunityState.Vulnerable)
+        if (_currentState == ImmunityState.Vulnerable)
         {
             _currentHealth -= damage;
             if (_currentHealth <= 0)
@@ -51,6 +51,7 @@ public class ActorBase : MonoBehaviour, IDamagable
     }
 
     //This function is called when the actor dies (Example: When the health of the actor hits 0)
+    [ContextMenu("OnActorDeath")]
     protected virtual void OnActorDeath()
     {
         SpawnFood();
@@ -59,6 +60,8 @@ public class ActorBase : MonoBehaviour, IDamagable
 
     private void SpawnFood()
     {
+        if (_possibleDrops == null || _possibleDrops.Count == 0) { return; }
         FoodHandler.Instance.GetSomeFood(_possibleDrops, transform);
     }
+
 }

@@ -1343,6 +1343,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26a2d045e531a9148b642ad24fa784d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coins: 0
   hp: 100
   maxhp: 100
   hpBar: {fileID: 0}
