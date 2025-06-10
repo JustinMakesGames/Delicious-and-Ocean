@@ -256,7 +256,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6512563730225007152}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 214545074513559773}
+        m_TargetAssemblyTypeName: WinManager, Assembly-CSharp
+        m_MethodName: Quit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1945305143832360747
 GameObject:
   m_ObjectHideFlags: 0
@@ -1128,7 +1140,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2547479517474659431}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 214545074513559773}
+        m_TargetAssemblyTypeName: WinManager, Assembly-CSharp
+        m_MethodName: ResetGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6673734983267421278
 GameObject:
   m_ObjectHideFlags: 0
@@ -1249,7 +1273,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2330752792000823474}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 214545074513559773}
+        m_TargetAssemblyTypeName: WinManager, Assembly-CSharp
+        m_MethodName: Quit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7174752019449515958
 GameObject:
   m_ObjectHideFlags: 0
@@ -1267,7 +1303,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1409362458218897751
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1341,6 +1377,8 @@ GameObject:
   - component: {fileID: 7388962595153174019}
   - component: {fileID: 6907784305586036577}
   - component: {fileID: 2860167999756810647}
+  - component: {fileID: 214545074513559773}
+  - component: {fileID: 4881598801752773995}
   m_Layer: 5
   m_Name: Win_Lose Canvas
   m_TagString: Untagged
@@ -1414,7 +1452,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &2860167999756810647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1432,6 +1470,39 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &214545074513559773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7262690653214885568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b5030e47635a74fa876c9968785b0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  winScreen: {fileID: 7174752019449515958}
+  loseScreen: {fileID: 2183018956837140897}
+--- !u!114 &4881598801752773995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7262690653214885568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7951c64acb0fa62458bf30a60089fe2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 0
+  m_CheckFor2DOcclusion: 0
+  m_CheckFor3DOcclusion: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RaycastTriggerInteraction: 1
 --- !u!1 &8422662645436113131
 GameObject:
   m_ObjectHideFlags: 0
@@ -1686,7 +1757,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6817454646443866282}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 214545074513559773}
+        m_TargetAssemblyTypeName: WinManager, Assembly-CSharp
+        m_MethodName: ResetGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8736901271528786671
 GameObject:
   m_ObjectHideFlags: 0

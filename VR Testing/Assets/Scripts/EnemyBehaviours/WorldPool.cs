@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class WorldPool : MonoBehaviour
+public class WhirlPool : MonoBehaviour
 {
     [SerializeField] private GameObject fish;
     [SerializeField] private int fishAmount;
