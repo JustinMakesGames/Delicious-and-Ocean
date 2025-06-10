@@ -653,6 +653,7 @@ MonoBehaviour:
   - {fileID: 660291176}
   - {fileID: 1477652359}
   - {fileID: 24620304}
+  endDay: 0
 --- !u!4 &761480868
 Transform:
   m_ObjectHideFlags: 0
@@ -1592,34 +1593,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2663109448541190782}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1798836534 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1264631924064823543, guid: 5561957018e852a4ea78a04a7ec2a0ab,
-    type: 3}
-  m_PrefabInstance: {fileID: 2663109448541190782}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &1798836539
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1798836534}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -4602772404570154525, guid: bd8dbd05c722a02409e809898b12aca5, type: 3}
 --- !u!4 &1821001835 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1025188816387723248, guid: 5561957018e852a4ea78a04a7ec2a0ab,
@@ -1655,8 +1628,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0dbe3fa4e654548a7c8e529e2f40c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dayDurationInMinutes: 2
-  _minuteDurationInSeconds: 60
+  _dayDurationInMinutes: 1
+  _minuteDurationInSeconds: 1
   OnDayEnd:
     m_PersistentCalls:
       m_Calls: []
@@ -1756,6 +1729,16 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1995673755987937824, guid: 5561957018e852a4ea78a04a7ec2a0ab,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2081861944929475417, guid: 5561957018e852a4ea78a04a7ec2a0ab,
+        type: 3}
+      propertyPath: m_Height
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2225926667317036256, guid: 5561957018e852a4ea78a04a7ec2a0ab,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -1826,6 +1809,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Right
       objectReference: {fileID: 0}
+    - target: {fileID: 4012309037916072543, guid: 5561957018e852a4ea78a04a7ec2a0ab,
+        type: 3}
+      propertyPath: automaticSpeedMultiplier
+      value: 0.005
+      objectReference: {fileID: 0}
     - target: {fileID: 4668776787966925615, guid: 5561957018e852a4ea78a04a7ec2a0ab,
         type: 3}
       propertyPath: interactionManager
@@ -1847,15 +1835,25 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5681638992673933464, guid: 5561957018e852a4ea78a04a7ec2a0ab,
+        type: 3}
+      propertyPath: m_CameraYOffset
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5681638992673933464, guid: 5561957018e852a4ea78a04a7ec2a0ab,
+        type: 3}
+      propertyPath: m_RequestedTrackingOriginMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6221369969271248794, guid: 5561957018e852a4ea78a04a7ec2a0ab,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6435935423516728981, guid: 5561957018e852a4ea78a04a7ec2a0ab,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 14
+      value: 15.4
       objectReference: {fileID: 0}
     - target: {fileID: 6435935423516728981, guid: 5561957018e852a4ea78a04a7ec2a0ab,
         type: 3}
@@ -1924,11 +1922,7 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1102405748}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1264631924064823543, guid: 5561957018e852a4ea78a04a7ec2a0ab,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1798836539}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5561957018e852a4ea78a04a7ec2a0ab, type: 3}
 --- !u!1001 &5664849014085400685
 PrefabInstance:

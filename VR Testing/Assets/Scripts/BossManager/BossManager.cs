@@ -18,6 +18,8 @@ public class BossManager : MonoBehaviour
 
     public List<Transform> tentacleSpawnPositions = new List<Transform>();
 
+    [SerializeField] private int endDay;
+
 
     private void Start()
     {
@@ -32,6 +34,11 @@ public class BossManager : MonoBehaviour
             {
                 SpawnBoss(bossSpawn);
             }
+        }
+
+        if (day == endDay)
+        {
+            WinManager.Instance.HandleWinning();
         }
     }
 
