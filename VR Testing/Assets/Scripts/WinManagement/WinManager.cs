@@ -16,6 +16,7 @@ public class WinManager : MonoBehaviour
             Instance = this;
         }
     }
+
     public void HandleWinning()
     {
         winScreen.SetActive(true);

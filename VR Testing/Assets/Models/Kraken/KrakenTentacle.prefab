@@ -207,7 +207,7 @@ MonoBehaviour:
   _currentHealth: 0
   _currentState: 0
   _possibleDrops: []
-  _weaponDamage: 25
+  _weaponDamage: 5
   _oneTimeUse: 0
   _damageType: 32
   _sphereCollider: {fileID: 2995826629561395864}
@@ -228,7 +228,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -256,7 +256,7 @@ MonoBehaviour:
   _currentHealth: 0
   _currentState: 0
   _possibleDrops: []
-  _weaponDamage: 25
+  _weaponDamage: 5
   _oneTimeUse: 0
   _damageType: 32
   _sphereCollider: {fileID: 2995826629561395864}
@@ -277,7 +277,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -305,7 +305,7 @@ MonoBehaviour:
   _currentHealth: 0
   _currentState: 0
   _possibleDrops: []
-  _weaponDamage: 25
+  _weaponDamage: 5
   _oneTimeUse: 0
   _damageType: 32
   _sphereCollider: {fileID: 2995826629561395864}
@@ -326,7 +326,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -354,7 +354,7 @@ MonoBehaviour:
   _currentHealth: 0
   _currentState: 0
   _possibleDrops: []
-  _weaponDamage: 25
+  _weaponDamage: 5
   _oneTimeUse: 0
   _damageType: 32
   _sphereCollider: {fileID: 2995826629561395864}
@@ -375,7 +375,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -403,7 +403,7 @@ MonoBehaviour:
   _currentHealth: 0
   _currentState: 0
   _possibleDrops: []
-  _weaponDamage: 25
+  _weaponDamage: 5
   _oneTimeUse: 0
   _damageType: 32
   _sphereCollider: {fileID: 2995826629561395864}
@@ -424,7 +424,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -452,7 +452,7 @@ MonoBehaviour:
   _currentHealth: 0
   _currentState: 0
   _possibleDrops: []
-  _weaponDamage: 25
+  _weaponDamage: 5
   _oneTimeUse: 0
   _damageType: 32
   _sphereCollider: {fileID: 2995826629561395864}
@@ -473,7 +473,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -501,7 +501,7 @@ MonoBehaviour:
   _currentHealth: 0
   _currentState: 0
   _possibleDrops: []
-  _weaponDamage: 25
+  _weaponDamage: 5
   _oneTimeUse: 0
   _damageType: 32
   _sphereCollider: {fileID: 2995826629561395864}
@@ -522,7 +522,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -596,7 +596,7 @@ MonoBehaviour:
   _currentHealth: 0
   _currentState: 0
   _possibleDrops: []
-  _weaponDamage: 25
+  _weaponDamage: 5
   _oneTimeUse: 0
   _damageType: 32
   _sphereCollider: {fileID: 2995826629561395864}
@@ -617,7 +617,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -645,7 +645,7 @@ MonoBehaviour:
   _currentHealth: 0
   _currentState: 0
   _possibleDrops: []
-  _weaponDamage: 25
+  _weaponDamage: 5
   _oneTimeUse: 0
   _damageType: 32
   _sphereCollider: {fileID: 2995826629561395864}
@@ -666,7 +666,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -694,7 +694,7 @@ MonoBehaviour:
   _currentHealth: 0
   _currentState: 0
   _possibleDrops: []
-  _weaponDamage: 25
+  _weaponDamage: 5
   _oneTimeUse: 0
   _damageType: 32
   _sphereCollider: {fileID: 2995826629561395864}
@@ -715,7 +715,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -743,7 +743,7 @@ MonoBehaviour:
   _currentHealth: 0
   _currentState: 0
   _possibleDrops: []
-  _weaponDamage: 25
+  _weaponDamage: 5
   _oneTimeUse: 0
   _damageType: 32
   _sphereCollider: {fileID: 2995826629561395864}
@@ -764,7 +764,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -792,7 +792,7 @@ MonoBehaviour:
   _currentHealth: 0
   _currentState: 0
   _possibleDrops: []
-  _weaponDamage: 25
+  _weaponDamage: 5
   _oneTimeUse: 0
   _damageType: 32
   _sphereCollider: {fileID: 2995826629561395864}
@@ -813,7 +813,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -841,7 +841,7 @@ MonoBehaviour:
   _currentHealth: 0
   _currentState: 0
   _possibleDrops: []
-  _weaponDamage: 25
+  _weaponDamage: 5
   _oneTimeUse: 0
   _damageType: 32
   _sphereCollider: {fileID: 2995826629561395864}
@@ -862,7 +862,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3

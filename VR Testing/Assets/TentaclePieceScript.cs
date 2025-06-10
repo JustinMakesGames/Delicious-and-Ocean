@@ -16,6 +16,7 @@ public class TentaclePieceScript : WeaponActor
         {
             PlayerStats.Instance.OnDamageTaken(WeaponDamage(), DamageType.Physical);
             _canHit = false;
+            print("Hit Player with Tentacle Piece, dealing " + WeaponDamage() + " damage");
             StartCoroutine(AttackCooldown());
         }
     }

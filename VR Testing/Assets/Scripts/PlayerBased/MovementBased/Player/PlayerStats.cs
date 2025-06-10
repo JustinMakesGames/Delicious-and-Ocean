@@ -35,7 +35,8 @@ public class PlayerStats : ActorBase
 
     protected override void OnActorDeath()
     {
-       //Enable death screen
+        WinManager.Instance.HandleLosing(); 
+        //Enable death screen
     }
 
 }

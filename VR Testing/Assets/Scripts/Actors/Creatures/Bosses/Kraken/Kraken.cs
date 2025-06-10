@@ -84,8 +84,10 @@ public class Kraken : ActorParent
         _activeTentacles.Add(tentacleGO);
     }
 
+    [ContextMenu("Eviscerate the fuckass squid")]
     protected override void OnActorDeath()
     {
+        WinManager.Instance.HandleWinning();
         base.OnActorDeath();
     }
 }
