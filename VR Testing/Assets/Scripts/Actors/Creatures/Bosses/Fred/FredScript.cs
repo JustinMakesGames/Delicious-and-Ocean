@@ -71,8 +71,10 @@ public class Fred : BaseEnemy
         boat = FindObjectOfType<BoatMovement>().transform;
         animator = GetComponentInChildren<Animator>();
 
-        
+        player = GameObject.FindGameObjectWithTag("Player").transform;
         _fishTransform = transform.GetChild(0);
+
+        transform.position = boat.GetChild(1).position;
 
         AddChildren(boat.GetChild(0).GetChild(0), fishRightPositions);
         AddChildren(boat.GetChild(0).GetChild(1), fishLeftPositions);
@@ -265,9 +267,9 @@ public class Fred : BaseEnemy
         }
 
         float timer = 0;
-        float endTimer = 4;
+        
 
-        while (timer < endTimer)
+        while (timer < attackInterval)
         {
             timer += Time.deltaTime;
             _fishTransform.rotation = boat.rotation;
@@ -383,4 +385,12 @@ public class Fred : BaseEnemy
         }
         
     }
+
+
+    protected override void OnActorDeath()
+    {
+        TimeEventManager.Instance.continueTimeRegulation = true;
+        base.OnActorDeath();
+    }
+
 }

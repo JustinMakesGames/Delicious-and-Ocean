@@ -8,6 +8,8 @@ TagManager:
   - Weapon
   - Pool
   - ExplosionTrigger
+  - Food
+  - BossFish
   layers:
   - Default
   - TransparentFX

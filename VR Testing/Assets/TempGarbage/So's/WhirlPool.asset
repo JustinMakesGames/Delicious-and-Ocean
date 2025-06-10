@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e22e378e50db4f841a8cbf7ad5d4309b, type: 3}
-  m_Name: FishFood
+  m_Script: {fileID: 11500000, guid: 137e73b707bb21c46a8451783299a1cd, type: 3}
+  m_Name: WhirlPool
   m_EditorClassIdentifier: 
-  foodRefillAmount: 20
-  hpFillAmount: 0
-  price: 20
+  objectGO: {fileID: 1564072675580374361, guid: 093c277d5b1963e408eb341b0c7e3fd1,
+    type: 3}
+  setRelativeObjectPos: {x: 0, y: 0, z: 0}
+  relativeObjectAdditivePos: {x: 0, y: 0, z: 0}

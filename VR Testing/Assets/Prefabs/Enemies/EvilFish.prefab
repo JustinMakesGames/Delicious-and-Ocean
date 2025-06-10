@@ -128,18 +128,10 @@ MonoBehaviour:
   jumpDuration: 3
   downSpeed: 10
   upSpeed: 30
-  fishLeftPositions:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  fishRightPositions:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  fishLeftPositions: []
+  fishRightPositions: []
   animationEndingInterval: 1
-  attackInterval: 4
+  attackInterval: 16
   ball: {fileID: 4255234893958298577, guid: 94d4dceef8dc7ef4e9962cd44b4e56cf, type: 3}
   ballSpawnPosition: {fileID: 6098471927911547156}
   player: {fileID: 0}

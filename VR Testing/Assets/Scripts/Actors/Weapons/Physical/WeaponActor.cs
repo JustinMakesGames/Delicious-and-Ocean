@@ -25,7 +25,7 @@ public class WeaponActor : ActorBase
         }
     }
 
-    public void OnTriggerEnter(Collider collision)
+    public virtual void OnTriggerEnter(Collider collision)
     {
         if (collision.TryGetComponent<IDamagable>(out IDamagable damagable))
         {

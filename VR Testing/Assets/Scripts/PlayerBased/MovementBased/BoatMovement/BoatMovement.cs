@@ -37,17 +37,15 @@ public class BoatMovement : MonoBehaviour
     private Transform _lastPlacedWaypoint;
     [SerializeField] private float tiltIntensity;
     [SerializeField] private int _wayPointCount = 2; //Atleast need 2 otherwise it no workie
-    private void Awake()
-    {
-        TimeEventManager.Instance.OnDayEnd.AddListener(InitBoat);
-    }
     private void Start()
     {
+        TimeEventManager.Instance.OnDayEnd.AddListener(InitBoat);
         InitBoat(0);
     }
 
     private void InitBoat(int currentDay)
     {
+        print("has played" + currentDay);
         acceleration = 0;
 
         if (ShouldSwitch(currentDay))
@@ -68,7 +66,6 @@ public class BoatMovement : MonoBehaviour
 
     private bool ShouldSwitch(int day)
     {
-        print(day % 2 != 0);
         return day % 2 != 0;
     }
     #region Manual

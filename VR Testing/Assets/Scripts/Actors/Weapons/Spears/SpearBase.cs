@@ -7,7 +7,7 @@ public class SpearBase : WeaponActor
     private bool _stickToTarget = false;
 
     //Test function to test whether or not damaging an actor works
-    public void OnTriggerEnter(Collider collision)
+    public override void OnTriggerEnter(Collider collision)
     {
         if (collision.TryGetComponent<IDamagable>(out IDamagable damagable))
         {
