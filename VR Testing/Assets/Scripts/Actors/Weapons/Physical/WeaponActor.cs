@@ -5,7 +5,7 @@ using UnityEngine;
 public class WeaponActor : ActorBase
 {
     public int WeaponDamage() { return _weaponDamage; }
-    private int _weaponDamage;
+    [SerializeField] private int _weaponDamage;
 
     [SerializeField]private bool _oneTimeUse = false;
 
@@ -19,10 +19,6 @@ public class WeaponActor : ActorBase
             _weaponDamage = _actorStatsSO.startDamage;
             _damageType = _actorStatsSO.damageType;
         }
-        else
-        {
-            print("No actorStatsSO assigned to the weapon, so no damage");
-        }
     }
 
     public virtual void OnTriggerEnter(Collider collision)
@@ -31,7 +27,7 @@ public class WeaponActor : ActorBase
         {
             damagable.OnDamageTaken(WeaponDamage(), _damageType);
 
-            print("Hit " + collision.name + " with weapon, dealing " + WeaponDamage() + " damage");
+            print(gameObject.name + "  Hit " + collision.name + " with weapon, dealing " + WeaponDamage() + " damage");
             if(_oneTimeUse)
             {
                 Destroy(gameObject);

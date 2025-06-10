@@ -99,8 +99,9 @@ MonoBehaviour:
   _currentHealth: 0
   _currentState: 0
   _possibleDrops: []
-  _tentacleGO: {fileID: 2367843394992610677, guid: fc68f2d6eb8555244b1031fd0732edcc,
+  _tentacleGO: {fileID: 4577785623961552581, guid: 4b922d5c32591684dbcca740ccf22329,
     type: 3}
-  _tentacleSpawnInterval: 0.1
+  _spawnTentacleAttempt: 4
   _maxTentacles: 3
   tentacleSpawnPositions: []
+  boatTransform: {fileID: 0}

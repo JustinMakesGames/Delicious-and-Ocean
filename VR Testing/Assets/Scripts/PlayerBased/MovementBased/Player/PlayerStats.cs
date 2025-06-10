@@ -4,36 +4,38 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class PlayerStats : MonoBehaviour
+public class PlayerStats : ActorBase
 {
+    public static Transform PlayerPos { get; private set; }
+    public static PlayerStats Instance { get; private set; }
     public int coins;
-    [SerializeField] private int hp;
-    [SerializeField] private int maxhp;
+
     [SerializeField] private Slider hpBar;
 
-    private void Awake()
+    protected override void Awake()
     {
-        hpBar.maxValue = hp;
-        hpBar.value = hp;
-    }
-    public void TakeDamage(int damage)
-    {
-        hp -= damage;
-
-        hpBar.value = hp;
-        if (hp <= 0)
-        {
-            Die();
-        }
+        base.Awake();
+        Instance = this;
+        PlayerPos = transform;
+        hpBar.maxValue = _currentHealth;
+        hpBar.value = _currentHealth;
     }
 
-    public void Die()
+    public override void OnDamageTaken(int damage, DamageType dmgType)
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        base.OnDamageTaken(damage, dmgType);
+        hpBar.value = _currentHealth;
+        print(_currentHealth + " HP left");
     }
 
     public void SellItem(int price)
     {
         coins += price;
     }
+
+    protected override void OnActorDeath()
+    {
+       //Enable death screen
+    }
+
 }

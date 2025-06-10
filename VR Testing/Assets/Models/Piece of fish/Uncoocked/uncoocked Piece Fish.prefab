@@ -10,6 +10,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ef6974a292ebf1e4196ec2dbe96d913d,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ef6974a292ebf1e4196ec2dbe96d913d,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ef6974a292ebf1e4196ec2dbe96d913d,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ef6974a292ebf1e4196ec2dbe96d913d,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.6249466
       objectReference: {fileID: 0}
@@ -66,10 +81,40 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ef6974a292ebf1e4196ec2dbe96d913d,
         type: 3}
       propertyPath: m_Name
-      value: Piece Of Fish
+      value: uncoocked Piece Fish
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ef6974a292ebf1e4196ec2dbe96d913d,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8512342018403066043}
   m_SourcePrefab: {fileID: 100100000, guid: ef6974a292ebf1e4196ec2dbe96d913d, type: 3}
+--- !u!1 &2606322914677823863 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ef6974a292ebf1e4196ec2dbe96d913d,
+    type: 3}
+  m_PrefabInstance: {fileID: 2948429697275929638}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8512342018403066043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2606322914677823863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7355938ce951ad4390e2f8d41d381fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  foodStats: {fileID: 11400000, guid: 37e54d91b84d6604aab4ae37ef505646, type: 2}
+  price: 0
+  cookingType: 255
+  _inProcess: 0
+  _cookData:
+  - cookingType: 2
+    resultGO: {fileID: 4415903804259247952, guid: 8fa1b8f0b5e3add46925b5f8a71d0ab0,
+      type: 3}

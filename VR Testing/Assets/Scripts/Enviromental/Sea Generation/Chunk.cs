@@ -18,7 +18,6 @@ public class Chunk : MonoBehaviour
         name = (((int)(transform.position.x * transform.position.z) + seed) / 2).ToString();
         var water = Instantiate(waterGO, _waterPos.position, Quaternion.identity, transform);
 
-        //Temporary division by 1000, the water import is fucked
         water.transform.localScale = new Vector3(chunkSize / 100_0, 1, chunkSize / 100_0);
 
         SeedChunk(chunkSize, OG, generationObjectCount);

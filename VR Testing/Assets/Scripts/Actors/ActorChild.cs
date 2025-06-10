@@ -5,8 +5,8 @@ using UnityEngine;
 [Tooltip("A child actor that sends input damage to its parent, usefull for multi-piece bosses/enemies")]
 public class ActorChild : ActorBase
 {
-    protected ActorBase _parentActor;
-    public ActorBase ParentActor
+    protected ActorParent _parentActor;
+    public ActorParent ParentActor
     {
         get => _parentActor;
         set

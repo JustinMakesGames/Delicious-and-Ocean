@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 137e73b707bb21c46a8451783299a1cd, type: 3}
-  m_Name: Island(Moon)
+  m_Script: {fileID: 11500000, guid: bce0bbdfcad061f47a482e97902e6491, type: 3}
+  m_Name: Player
   m_EditorClassIdentifier: 
-  objectGO: {fileID: 2817639904184834240, guid: 0fd06e227dae5a347bc8143c90dad861,
-    type: 3}
-  setRelativeObjectPos: {x: 0, y: 0, z: 0}
-  relativeObjectAdditivePos: {x: 0, y: 0, z: 0}
+  maxHealth: 100
+  startDamage: 0
+  startState: 0
+  damageType: 0

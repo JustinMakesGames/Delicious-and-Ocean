@@ -37,13 +37,17 @@ public class BoatMovement : MonoBehaviour
     private Transform _lastPlacedWaypoint;
     [SerializeField] private float tiltIntensity;
     [SerializeField] private int _wayPointCount = 2; //Atleast need 2 otherwise it no workie
+
+    public static BoatMovement Instance;
+
     private void Start()
     {
+        Instance = this;
         TimeEventManager.Instance.OnDayEnd.AddListener(InitBoat);
         InitBoat(0);
     }
 
-    private void InitBoat(int currentDay)
+    public void InitBoat(int currentDay)
     {
         print("has played" + currentDay);
         acceleration = 0;
@@ -66,7 +70,7 @@ public class BoatMovement : MonoBehaviour
 
     private bool ShouldSwitch(int day)
     {
-        return day % 2 != 0;
+        return day == 1 || day == 3;
     }
     #region Manual
     private void FixedUpdate()
@@ -177,7 +181,6 @@ public class BoatMovement : MonoBehaviour
 
     private IEnumerator MoveAlongPath()
     {
-        print("Started following waypoints");
 
         acceleration = speedMultiplier * automaticSpeedMultiplier;
         if (_wayPointQueue.Count == 0) yield break;
@@ -189,28 +192,20 @@ public class BoatMovement : MonoBehaviour
             while (Vector3.Distance(transform.position, wayPoint.position) > 1f)
             {
                 Vector3 direction = (wayPoint.position - transform.position).normalized;
-                Debug.Log("Direction: " + direction);
-
                 transform.position += direction * acceleration * Time.deltaTime * speedMultiplier * automaticSpeedMultiplier;
 
                 Quaternion targetRotation = Quaternion.LookRotation(wayPoint.position - transform.position);
 
-                Debug.Log("Target rotation before banking: " + targetRotation.eulerAngles);
-                Debug.Log("Current rotation: " + transform.rotation.eulerAngles);
-
                 Vector3 cross = Vector3.Cross(transform.forward, direction);
                 float tiltAmount = Mathf.Clamp(cross.y, -1f, 1f) * tiltIntensity;
-                Debug.Log("Tilt amount: " + tiltAmount);
 
                 Quaternion bankRotation = targetRotation * Quaternion.Euler(0, 0, -tiltAmount);
-                print(bankRotation);
+
                 // Try direct rotation first to check if rotation changes:
                 // transform.rotation = targetRotation;
 
                 // Use Slerp for smooth rotation with banking:
                 transform.rotation = Quaternion.Slerp(transform.rotation, bankRotation, _automaticTurnSpeed * Time.deltaTime);
-
-                Debug.Log("New rotation after slerp: " + transform.rotation.eulerAngles);
 
                 yield return new WaitForFixedUpdate();
             }

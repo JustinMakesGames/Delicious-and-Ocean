@@ -14,6 +14,10 @@ public class TimeEventManager : MonoBehaviour
     public UnityEvent<int> OnSecondPassed = new UnityEvent<int>();
     public UnityEvent<int> OnMinutePassed = new UnityEvent<int>();
 
+    public int currentDay = 0;
+    public int currentMinute = 0;
+    public int currentSecond = 0;
+
     [SerializeField] private bool _debugValues;
 
     //This is set to false on uneven days, so the bossfights can happen
@@ -46,19 +50,21 @@ public class TimeEventManager : MonoBehaviour
         var curSecond = 0;
         var curMinute = 0;
 
-        while (true)
+        var yes = true;
+        while (yes)
         {
             while (continueTimeRegulation)
             {
                 //Can be a hardcoded value for the increment, dont whine. its a second, why the hell would you input anything else then a second
                 yield return new WaitForSeconds(1f);
                 curSecond++;
-
+                currentSecond++;
                 OnSecondPassed.Invoke(curSecond);
 
                 if (curSecond >= _minuteDurationInSeconds)
                 {
                     curSecond = 0;
+                    currentMinute++;
                     curMinute++;
                     OnMinutePassed.Invoke(curMinute);
                 }
@@ -66,7 +72,10 @@ public class TimeEventManager : MonoBehaviour
                 if (curMinute >= _dayDurationInMinutes)
                 {
                     curMinute = 0;
+                    curMinute++;
                     curDay++;
+                    currentDay++;
+
                     OnDayEnd.Invoke(curDay);
 
                     // Stop time regulation on uneven days, to do the bossfight
@@ -78,7 +87,7 @@ public class TimeEventManager : MonoBehaviour
                 }
 
             }
-            yield return new WaitForEndOfFrame();
+            yield return null;
         }
     }
     #region Debug Methods

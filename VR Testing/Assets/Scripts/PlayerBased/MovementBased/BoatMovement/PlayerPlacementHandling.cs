@@ -10,7 +10,7 @@ public class PlayerPlacementHandling : MonoBehaviour
     {
         if (other.CompareTag("Player") && !_isPlayerOnBoat)
         {
-            print("It happened");
+            print(gameObject.name +     "   It happened");
             other.transform.parent = boat;
             _isPlayerOnBoat = true;
         }

@@ -62,7 +62,7 @@ public class FoodHandler : MonoBehaviour
         while (_hasNoFood)
         {
             yield return new WaitForSeconds(damageInterval);
-            playerStats.TakeDamage(damage);
+            playerStats.OnDamageTaken(damage, DamageType.None);
         }
     }
 

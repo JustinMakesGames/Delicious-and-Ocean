@@ -64,4 +64,10 @@ public class ActorBase : MonoBehaviour, IDamagable
         FoodHandler.Instance.GetSomeFood(_possibleDrops, transform);
     }
 
+
+    [ContextMenu("50% Health damage")]
+    public void TestDamage()
+    {
+        OnDamageTaken(_currentHealth / 2, DamageType.Physical);
+    }
 }

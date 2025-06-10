@@ -6,7 +6,7 @@ using UnityEngine;
 public class BallBehaviour : MonoBehaviour
 {
     [SerializeField] private float ballSpeed;
-    private int _attackPower;
+   [SerializeField] private int _attackPower;
 
     private void Start()
     {
@@ -25,7 +25,7 @@ public class BallBehaviour : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            other.GetComponent<PlayerStats>().TakeDamage(_attackPower);
+            other.GetComponent<IDamagable>().OnDamageTaken(_attackPower);
             Destroy(gameObject);
         }
 

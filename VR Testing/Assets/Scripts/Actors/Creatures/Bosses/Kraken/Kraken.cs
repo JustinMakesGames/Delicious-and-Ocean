@@ -78,8 +78,9 @@ public class Kraken : ActorParent
             return;
         }
         var tentacleGO = InstantiateChild(_tentacleGO, tentacleSpawnPos);
-        tentacleGO.transform.Rotate(0, 0, 90);
+        tentacleGO.transform.Rotate(gameObject.name == "Left" ? new Vector3(0, -90, 0) : new Vector3(0, 90, 0));
 
+        tentacleGO.transform.parent = tentacleSpawnPos;
         _activeTentacles.Add(tentacleGO);
     }
 

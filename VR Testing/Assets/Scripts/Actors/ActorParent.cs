@@ -73,6 +73,10 @@ public class ActorParent : ActorBase
         return child;
     }
     #endregion
+    public virtual void OnChildDamaged(int damageTaken, DamageType DT)
+    {
+        OnDamageTaken(damageTaken, DT);
+    }
 
     protected override void OnActorDeath()
     {

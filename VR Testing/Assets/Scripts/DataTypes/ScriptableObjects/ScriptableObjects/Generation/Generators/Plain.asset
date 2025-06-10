@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objects:
   - GO: {fileID: 11400000, guid: b2b9a22e78a83504e99c3f306d07ed76, type: 2}
+    chance: 10
+  - GO: {fileID: 11400000, guid: 1cc9fbb51461df74089dde9950a54074, type: 2}
     chance: 20
   - GO: {fileID: 11400000, guid: 98d4d71ab53afa840a2c7109bce8c0f6, type: 2}
     chance: 100
