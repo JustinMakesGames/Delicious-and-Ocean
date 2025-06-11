@@ -10,21 +10,22 @@ public class Cooker : MonoBehaviour
 
     [SerializeField] private Transform _processingFoodHolder;
 
-    public void Awake()
+    private IEnumerator CookFood()
     {
-        DayTime.OnMorningArrived.AddListener(OnMorningArrived);
+        yield return new WaitForSeconds(10);
+        OnMorningArrived();
     }
-
     public void AssignFood(Food food)
     {
         _currentlyProcessingFood = food;
         _currentlyProcessingFood.transform.SetParent(_processingFoodHolder);
         _currentlyProcessingFood.transform.position = _processingFoodHolder.position;
 
+        StartCoroutine(CookFood());
         _currentlyProcessingFood.OnFoodAssigned();
     }
 
-    public void OnMorningArrived(int dayCount)
+    public void OnMorningArrived()
     {
         if(!_currentlyProcessingFood) return;
         _currentlyProcessingFood.OnFoodCooked();

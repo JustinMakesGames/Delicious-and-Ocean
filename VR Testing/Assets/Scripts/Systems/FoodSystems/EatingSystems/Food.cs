@@ -44,7 +44,7 @@ public class Food : MonoBehaviour
     [SerializeField] private bool _inProcess;
     [SerializeField] private CookData[] _cookData;
 
-    private GameObject _resultGO;
+    [SerializeField] private GameObject _resultGO;
 
     //Check for the cooker to see whether or not it can cook this food
     private bool CanCookFood(Cooker cooker)
@@ -88,10 +88,12 @@ public class Food : MonoBehaviour
     {
         if(collision.gameObject.TryGetComponent(out Cooker cooker))
         {
-            if (CanCookFood(cooker))
-            {
+            print("tried to cook food");
+            //if (CanCookFood(cooker))
+            //{
+                print("Is cooking food");
                 cooker.AssignFood(this);
-            }
+            //}
         }
     }
 

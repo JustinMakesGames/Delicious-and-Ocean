@@ -114,6 +114,7 @@ public class TimeEventManager : MonoBehaviour
     {
         _minuteTimer = _dayDurationInMinutes - 1;
         _secondTimer = _minuteDurationInSeconds;
+        continueTimeRegulation = true;
     }
     #region Debug Methods
     public enum DebugType
