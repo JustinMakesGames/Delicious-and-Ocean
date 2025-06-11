@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -9,6 +10,10 @@ public class TimeEventManager : MonoBehaviour
 
     [SerializeField] private int _dayDurationInMinutes;
     [SerializeField] private int _minuteDurationInSeconds = 60;
+
+    [SerializeField] private TMP_Text timerText;
+    private int _minuteTimer;
+    private int _secondTimer;
 
     public UnityEvent<int> OnDayEnd = new UnityEvent<int>();
     public UnityEvent<int> OnSecondPassed = new UnityEvent<int>();
@@ -34,6 +39,8 @@ public class TimeEventManager : MonoBehaviour
             Destroy(Instance.gameObject);
             Instance = this;
         }
+
+        SetNewTimer();
     }
 
     private void Start()
@@ -86,9 +93,27 @@ public class TimeEventManager : MonoBehaviour
                     }
                 }
 
+                if (_secondTimer <= 0)
+                {
+                    _minuteTimer--;
+                    _secondTimer = _minuteDurationInSeconds;
+                }
+
+                _secondTimer--;
+                
+                timerText.text = _minuteTimer.ToString() +":" + _secondTimer.ToString("00");
+
+                
+
             }
             yield return null;
         }
+    }
+
+    public void SetNewTimer()
+    {
+        _minuteTimer = _dayDurationInMinutes - 1;
+        _secondTimer = _minuteDurationInSeconds;
     }
     #region Debug Methods
     public enum DebugType

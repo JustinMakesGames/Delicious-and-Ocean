@@ -389,7 +389,7 @@ public class Fred : BaseEnemy
     [ContextMenu("Destroy's Fred from existence")]
     protected override void OnActorDeath()
     {
-        TimeEventManager.Instance.continueTimeRegulation = true;
+        TimeEventManager.Instance.SetNewTimer();
         BoatMovement.Instance.InitBoat(0);
         base.OnActorDeath();
     }
