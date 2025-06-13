@@ -2461,6 +2461,12 @@ PrefabInstance:
       propertyPath: m_RequestedTrackingOriginMode
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6049079906300116819, guid: 5561957018e852a4ea78a04a7ec2a0ab,
+        type: 3}
+      propertyPath: _waterPrefab
+      value: 
+      objectReference: {fileID: 7347136989714869776, guid: 47831956eb3db6244b1ecb2df8248268,
+        type: 3}
     - target: {fileID: 6221369969271248794, guid: 5561957018e852a4ea78a04a7ec2a0ab,
         type: 3}
       propertyPath: m_LocalPosition.y
