@@ -118,3 +118,5 @@ MonoBehaviour:
   - cookingType: 2
     resultGO: {fileID: 4415903804259247952, guid: 8fa1b8f0b5e3add46925b5f8a71d0ab0,
       type: 3}
+  _resultGO: {fileID: 7634388798600993458, guid: 3c1ec1f783402d1438f61d8b6f40fde3,
+    type: 3}

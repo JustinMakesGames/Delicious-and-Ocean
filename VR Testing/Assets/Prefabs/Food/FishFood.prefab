@@ -317,7 +317,8 @@ MonoBehaviour:
   cookingType: 0
   _inProcess: 0
   _cookData: []
-  _resultGO: {fileID: 0}
+  _resultGO: {fileID: 7634388798600993458, guid: 3c1ec1f783402d1438f61d8b6f40fde3,
+    type: 3}
 --- !u!1001 &3059921065323801326
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _actorStatsSO: {fileID: 11400000, guid: c5e2fce275bd7034e83b3c5672bd5b8a, type: 2}
-  _currentHealth: 100
+  _currentHealth: 20
   _currentState: 0
   _possibleDrops: []
   myRenderer: {fileID: 1213516232173715582}

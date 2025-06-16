@@ -35,11 +35,6 @@ public class BossManager : MonoBehaviour
                 SpawnBoss(bossSpawn);
             }
         }
-
-        if (day == endDay)
-        {
-            WinManager.Instance.HandleWinning();
-        }
     }
 
     private void SpawnBoss(BossTimeSpawn bossSpawn)
