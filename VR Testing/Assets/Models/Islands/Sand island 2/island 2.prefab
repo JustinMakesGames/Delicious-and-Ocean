@@ -1,5 +1,597 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &195741652268706777
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1175620431098623731}
+    m_Modifications:
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.187973
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.1680336
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.5461019
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.8377188
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -246.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155622433930763823, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_Name
+      value: lekijke Boom (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d12f81c0b6620b2488c3a026e8064898, type: 3}
+--- !u!4 &2465646785414786892 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+    type: 3}
+  m_PrefabInstance: {fileID: 195741652268706777}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &314428461647299305
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1175620431098623731}
+    m_Modifications:
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -20.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.020070076
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9997986
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 177.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155622433930763823, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_Name
+      value: lekijke Boom (37)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d12f81c0b6620b2488c3a026e8064898, type: 3}
+--- !u!4 &2656497384581793404 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+    type: 3}
+  m_PrefabInstance: {fileID: 314428461647299305}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &630561471615650725
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1175620431098623731}
+    m_Modifications:
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.187973
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.5719671
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7716249
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6360778
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 799
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155622433930763823, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_Name
+      value: lekijke Boom (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d12f81c0b6620b2488c3a026e8064898, type: 3}
+--- !u!4 &2900565686469316400 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+    type: 3}
+  m_PrefabInstance: {fileID: 630561471615650725}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &659459812595665514
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1175620431098623731}
+    m_Modifications:
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.012179
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.2780333
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.38912383
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.92118555
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 225.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155622433930763823, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_Name
+      value: lekijke Boom (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d12f81c0b6620b2488c3a026e8064898, type: 3}
+--- !u!4 &3001097722140495615 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+    type: 3}
+  m_PrefabInstance: {fileID: 659459812595665514}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &889173455156655564
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1175620431098623731}
+    m_Modifications:
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.4043293
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 28.177828
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.38912383
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.92118555
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 225.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155622433930763823, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_Name
+      value: lekijke Boom (26)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d12f81c0b6620b2488c3a026e8064898, type: 3}
+--- !u!4 &3230822306164224345 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+    type: 3}
+  m_PrefabInstance: {fileID: 889173455156655564}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1401216565522130938
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1175620431098623731}
+    m_Modifications:
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.4044704
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 26.560293
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.020070076
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9997986
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 177.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155622433930763823, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_Name
+      value: lekijke Boom (29)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d12f81c0b6620b2488c3a026e8064898, type: 3}
+--- !u!4 &3743276634381542255 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+    type: 3}
+  m_PrefabInstance: {fileID: 1401216565522130938}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1441795886296160170
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1175620431098623731}
+    m_Modifications:
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.1298523
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.6860664
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7716249
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6360778
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 799
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155622433930763823, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_Name
+      value: lekijke Boom (13)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d12f81c0b6620b2488c3a026e8064898, type: 3}
+--- !u!4 &3783759220681167679 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+    type: 3}
+  m_PrefabInstance: {fileID: 1441795886296160170}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1445086625805521946
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1175620431098623731}
+    m_Modifications:
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.6087666
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 31.228119
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.5461019
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.8377188
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -246.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155622433930763823, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_Name
+      value: lekijke Boom (27)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d12f81c0b6620b2488c3a026e8064898, type: 3}
+--- !u!4 &3786735568617754767 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+    type: 3}
+  m_PrefabInstance: {fileID: 1445086625805521946}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1718719127997010200
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26,17 +618,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 189
+      value: -11.768002
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7
+      value: -2.3976078
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 123.90734
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
         type: 3}
@@ -46,7 +638,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
         type: 3}
@@ -85,6 +677,2384 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5487490836052536828}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7459252747140671657}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5355479371998407898}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9085094359722670942}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4172513935398177291}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8597703244427693111}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5201808089168895378}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3230822306164224345}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4682157858591123620}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7826076941076041708}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2165912440188016921}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3001097722140495615}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5532291824826653305}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1724585678980122003}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5608813529507646750}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7967928275383583583}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3786735568617754767}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 980477960799233507}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4375972197083954630}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4914623496052863038}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6517040316744334369}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2465646785414786892}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1047636302939507674}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6863901928017722028}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8063890171464103826}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5274289427553961921}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7642447201864723670}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7383174293415674257}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6233441497400969738}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2900565686469316400}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9119334507745693166}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3783759220681167679}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8624914024818179985}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8672442626430772945}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 365220305297055755}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3743276634381542255}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5669264254828358304}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2656497384581793404}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56f2ac71333bea647b0e23317b1a850e, type: 3}
+--- !u!4 &1175620431098623731 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56f2ac71333bea647b0e23317b1a850e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1718719127997010200}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1830548458327805598
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1175620431098623731}
+    m_Modifications:
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 15.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.38912383
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.92118555
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 225.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155622433930763823, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_Name
+      value: lekijke Boom (14)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d12f81c0b6620b2488c3a026e8064898, type: 3}
+--- !u!4 &4172513935398177291 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+    type: 3}
+  m_PrefabInstance: {fileID: 1830548458327805598}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2034016013819754835
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1175620431098623731}
+    m_Modifications:
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -20.674294
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.4600003
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.37782288
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.5461019
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.8377188
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -246.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155622433930763823, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_Name
+      value: lekijke Boom (35)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d12f81c0b6620b2488c3a026e8064898, type: 3}
+--- !u!4 &4375972197083954630 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+    type: 3}
+  m_PrefabInstance: {fileID: 2034016013819754835}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2707033499973428382
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1175620431098623731}
+    m_Modifications:
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 18.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.54334116
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.020070076
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9997986
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 177.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155622433930763823, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_Name
+      value: lekijke Boom (25)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d12f81c0b6620b2488c3a026e8064898, type: 3}
+--- !u!4 &365220305297055755 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+    type: 3}
+  m_PrefabInstance: {fileID: 2707033499973428382}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3250348564018864502
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1175620431098623731}
+    m_Modifications:
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -19.884438
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.8300002
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 18.160278
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.5461019
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.8377188
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -246.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155622433930763823, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_Name
+      value: lekijke Boom (31)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d12f81c0b6620b2488c3a026e8064898, type: 3}
+--- !u!4 &980477960799233507 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+    type: 3}
+  m_PrefabInstance: {fileID: 3250348564018864502}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3317225362496245583
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1175620431098623731}
+    m_Modifications:
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.58203125
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.7819664
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.5461019
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.8377188
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -246.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155622433930763823, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_Name
+      value: lekijke Boom (12)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d12f81c0b6620b2488c3a026e8064898, type: 3}
+--- !u!4 &1047636302939507674 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+    type: 3}
+  m_PrefabInstance: {fileID: 3317225362496245583}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3994165960160575750
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1175620431098623731}
+    m_Modifications:
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.387815
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.371966
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.38912383
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.92118555
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 225.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155622433930763823, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_Name
+      value: lekijke Boom (15)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d12f81c0b6620b2488c3a026e8064898, type: 3}
+--- !u!4 &1724585678980122003 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+    type: 3}
+  m_PrefabInstance: {fileID: 3994165960160575750}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4507549818264198540
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1175620431098623731}
+    m_Modifications:
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.38912383
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.92118555
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 225.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155622433930763823, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_Name
+      value: lekijke Boom (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d12f81c0b6620b2488c3a026e8064898, type: 3}
+--- !u!4 &2165912440188016921 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+    type: 3}
+  m_PrefabInstance: {fileID: 4507549818264198540}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5113442274261615876
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1175620431098623731}
+    m_Modifications:
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -14.475671
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.9800005
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.44216
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7716249
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6360778
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 799
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155622433930763823, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_Name
+      value: lekijke Boom (32)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d12f81c0b6620b2488c3a026e8064898, type: 3}
+--- !u!4 &7383174293415674257 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+    type: 3}
+  m_PrefabInstance: {fileID: 5113442274261615876}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5117289382657600572
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1175620431098623731}
+    m_Modifications:
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.1078186
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.398033
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.21899472
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.97572607
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 205.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155622433930763823, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_Name
+      value: lekijke Boom (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d12f81c0b6620b2488c3a026e8064898, type: 3}
+--- !u!4 &7459252747140671657 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+    type: 3}
+  m_PrefabInstance: {fileID: 5117289382657600572}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5372715688443062339
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1175620431098623731}
+    m_Modifications:
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 23.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7716249
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6360778
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 799
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155622433930763823, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_Name
+      value: lekijke Boom (28)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d12f81c0b6620b2488c3a026e8064898, type: 3}
+--- !u!4 &7642447201864723670 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+    type: 3}
+  m_PrefabInstance: {fileID: 5372715688443062339}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5484006441317862265
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1175620431098623731}
+    m_Modifications:
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -15.469856
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.7000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.6724558
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.38912383
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.92118555
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 225.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155622433930763823, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_Name
+      value: lekijke Boom (34)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d12f81c0b6620b2488c3a026e8064898, type: 3}
+--- !u!4 &7826076941076041708 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+    type: 3}
+  m_PrefabInstance: {fileID: 5484006441317862265}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5625859884487903178
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1175620431098623731}
+    m_Modifications:
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 18.345703
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.2111664
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.5461019
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.8377188
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -246.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155622433930763823, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_Name
+      value: lekijke Boom (23)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d12f81c0b6620b2488c3a026e8064898, type: 3}
+--- !u!4 &7967928275383583583 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+    type: 3}
+  m_PrefabInstance: {fileID: 5625859884487903178}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5721933466864694023
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1175620431098623731}
+    m_Modifications:
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 17.9758
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 20.599998
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.5461019
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.8377188
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -246.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155622433930763823, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_Name
+      value: lekijke Boom (20)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d12f81c0b6620b2488c3a026e8064898, type: 3}
+--- !u!4 &8063890171464103826 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+    type: 3}
+  m_PrefabInstance: {fileID: 5721933466864694023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6282817064840231684
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1175620431098623731}
+    m_Modifications:
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.24015808
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 11.013933
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.020070076
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9997986
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 177.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155622433930763823, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_Name
+      value: lekijke Boom (17)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d12f81c0b6620b2488c3a026e8064898, type: 3}
+--- !u!4 &8624914024818179985 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+    type: 3}
+  m_PrefabInstance: {fileID: 6282817064840231684}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6328112466380458146
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1175620431098623731}
+    m_Modifications:
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.34782
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 19.958035
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.38912383
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.92118555
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 225.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155622433930763823, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_Name
+      value: lekijke Boom (18)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d12f81c0b6620b2488c3a026e8064898, type: 3}
+--- !u!4 &8597703244427693111 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+    type: 3}
+  m_PrefabInstance: {fileID: 6328112466380458146}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6402537367086735940
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1175620431098623731}
+    m_Modifications:
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 15.4279785
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.3499997
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 15.131967
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.020070076
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9997986
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 177.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155622433930763823, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_Name
+      value: lekijke Boom (21)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d12f81c0b6620b2488c3a026e8064898, type: 3}
+--- !u!4 &8672442626430772945 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+    type: 3}
+  m_PrefabInstance: {fileID: 6402537367086735940}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6777555862323382651
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1175620431098623731}
+    m_Modifications:
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.640152
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.6360664
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7716249
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6360778
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 799
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155622433930763823, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_Name
+      value: lekijke Boom (9)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d12f81c0b6620b2488c3a026e8064898, type: 3}
+--- !u!4 &9119334507745693166 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+    type: 3}
+  m_PrefabInstance: {fileID: 6777555862323382651}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6815186904610160587
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1175620431098623731}
+    m_Modifications:
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.38912383
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.92118555
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 225.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155622433930763823, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_Name
+      value: lekijke Boom (10)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d12f81c0b6620b2488c3a026e8064898, type: 3}
+--- !u!4 &9085094359722670942 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+    type: 3}
+  m_PrefabInstance: {fileID: 6815186904610160587}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6952019114351307825
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1175620431098623731}
+    m_Modifications:
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -14.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 15.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.38912383
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.92118555
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 225.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155622433930763823, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_Name
+      value: lekijke Boom (30)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d12f81c0b6620b2488c3a026e8064898, type: 3}
+--- !u!4 &4682157858591123620 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+    type: 3}
+  m_PrefabInstance: {fileID: 6952019114351307825}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7256589040735417515
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1175620431098623731}
+    m_Modifications:
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.735794
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 26.503122
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.5461019
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.8377188
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -246.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155622433930763823, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_Name
+      value: lekijke Boom (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d12f81c0b6620b2488c3a026e8064898, type: 3}
+--- !u!4 &4914623496052863038 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+    type: 3}
+  m_PrefabInstance: {fileID: 7256589040735417515}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7543632366504794375
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1175620431098623731}
+    m_Modifications:
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 23.55014
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.5600007
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.1608758
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.38912383
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.92118555
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 225.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155622433930763823, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_Name
+      value: lekijke Boom (22)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d12f81c0b6620b2488c3a026e8064898, type: 3}
+--- !u!4 &5201808089168895378 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+    type: 3}
+  m_PrefabInstance: {fileID: 7543632366504794375}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7616395131514635092
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1175620431098623731}
+    m_Modifications:
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 23.75447
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.7800004
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.5069408
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7716249
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6360778
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 799
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155622433930763823, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_Name
+      value: lekijke Boom (24)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d12f81c0b6620b2488c3a026e8064898, type: 3}
+--- !u!4 &5274289427553961921 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+    type: 3}
+  m_PrefabInstance: {fileID: 7616395131514635092}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7697400890044950607
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1175620431098623731}
+    m_Modifications:
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.38912383
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.92118555
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 225.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155622433930763823, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_Name
+      value: lekijke Boom (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d12f81c0b6620b2488c3a026e8064898, type: 3}
+--- !u!4 &5355479371998407898 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+    type: 3}
+  m_PrefabInstance: {fileID: 7697400890044950607}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7802050211321552620
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1175620431098623731}
+    m_Modifications:
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.7578254
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.3280334
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.38912383
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.92118555
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 225.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155622433930763823, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_Name
+      value: lekijke Boom (11)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d12f81c0b6620b2488c3a026e8064898, type: 3}
+--- !u!4 &5532291824826653305 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+    type: 3}
+  m_PrefabInstance: {fileID: 7802050211321552620}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7829418451878635881
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1175620431098623731}
+    m_Modifications:
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.1078186
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 25.861156
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.21899472
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.97572607
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 205.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155622433930763823, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_Name
+      value: lekijke Boom
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d12f81c0b6620b2488c3a026e8064898, type: 3}
+--- !u!4 &5487490836052536828 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+    type: 3}
+  m_PrefabInstance: {fileID: 7829418451878635881}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7878580800109103499
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1175620431098623731}
+    m_Modifications:
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 14.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.5461019
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.8377188
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -246.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155622433930763823, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_Name
+      value: lekijke Boom (19)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d12f81c0b6620b2488c3a026e8064898, type: 3}
+--- !u!4 &5608813529507646750 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+    type: 3}
+  m_PrefabInstance: {fileID: 7878580800109103499}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7939160612852936245
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1175620431098623731}
+    m_Modifications:
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -19.680141
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 13.492453
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.020070076
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9997986
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 177.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155622433930763823, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_Name
+      value: lekijke Boom (33)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d12f81c0b6620b2488c3a026e8064898, type: 3}
+--- !u!4 &5669264254828358304 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+    type: 3}
+  m_PrefabInstance: {fileID: 7939160612852936245}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8503208735286595231
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1175620431098623731}
+    m_Modifications:
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -15.265527
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.340296
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7716249
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6360778
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 799
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155622433930763823, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_Name
+      value: lekijke Boom (36)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d12f81c0b6620b2488c3a026e8064898, type: 3}
+--- !u!4 &6233441497400969738 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+    type: 3}
+  m_PrefabInstance: {fileID: 8503208735286595231}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8859135640339740852
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1175620431098623731}
+    m_Modifications:
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.735794
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.5461019
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.8377188
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -246.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155622433930763823, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_Name
+      value: lekijke Boom (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d12f81c0b6620b2488c3a026e8064898, type: 3}
+--- !u!4 &6517040316744334369 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+    type: 3}
+  m_PrefabInstance: {fileID: 8859135640339740852}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9205831669886451257
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1175620431098623731}
+    m_Modifications:
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.7879791
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 16.481966
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.5461019
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.8377188
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -246.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155622433930763823, guid: d12f81c0b6620b2488c3a026e8064898,
+        type: 3}
+      propertyPath: m_Name
+      value: lekijke Boom (16)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d12f81c0b6620b2488c3a026e8064898, type: 3}
+--- !u!4 &6863901928017722028 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2342106341260264597, guid: d12f81c0b6620b2488c3a026e8064898,
+    type: 3}
+  m_PrefabInstance: {fileID: 9205831669886451257}
+  m_PrefabAsset: {fileID: 0}
