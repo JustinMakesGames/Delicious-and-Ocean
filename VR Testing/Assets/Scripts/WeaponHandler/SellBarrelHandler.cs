@@ -13,6 +13,8 @@ public class BarrelHandler : MonoBehaviour
     [SerializeField] private GameObject weapon;
     [SerializeField] private bool isInfinite;
     [SerializeField] private Transform ship;
+    [SerializeField] private int maxNumberChance;
+    [SerializeField] private GameObject bombSpear;
 
     private void Awake()
     {
@@ -26,7 +28,19 @@ public class BarrelHandler : MonoBehaviour
     public void InstantiateSpear(SelectEnterEventArgs args)
     {
         if (amountOfSpears <= 0) return;
-        GameObject woodenSpearClone = Instantiate(weapon, transform.position, Quaternion.identity, ship);
+
+        int randomBombSpearChance = Random.Range(0, maxNumberChance);
+
+        GameObject woodenSpearClone = null;
+        if (randomBombSpearChance == 0)
+        {
+            woodenSpearClone = Instantiate(bombSpear, transform.position, Quaternion.identity, ship);
+        }
+
+        else
+        {
+            woodenSpearClone = Instantiate(weapon, transform.position, Quaternion.identity, ship);
+        }
 
         XRGrabInteractable xrGrab = woodenSpearClone.GetComponent<XRGrabInteractable>();
 

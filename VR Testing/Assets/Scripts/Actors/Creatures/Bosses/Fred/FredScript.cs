@@ -1,10 +1,5 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using Unity.VisualScripting;
-using UnityEditor.PackageManager;
 using UnityEngine;
 using Random = UnityEngine.Random;
 public enum EnemyState
@@ -179,7 +174,7 @@ public class Fred : BaseEnemy
         _fishTransform.rotation = Quaternion.Lerp(_fishTransform.rotation, rotation, rotationSpeed * Time.deltaTime);
         transform.Translate(direction * fishSpeed * Time.deltaTime);
 
-        if (Vector3.Distance(transform.position, _fishPosition.position) < 0.5f)
+        if (Vector3.Distance(transform.position, _fishPosition.position) < 1f)
         {
             Transform endPosition = _fishPosition.GetChild(0);
             Vector3 directionToLook = (endPosition.position - transform.position).normalized;

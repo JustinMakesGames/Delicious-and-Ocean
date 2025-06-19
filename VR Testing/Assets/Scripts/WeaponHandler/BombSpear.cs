@@ -8,6 +8,8 @@ public class BombSpear : SpearBase
     public bool canExplode;
     public bool hasBeenThrown;
 
+    [SerializeField] private GameObject explosion;
+
     [SerializeField] private float intervalTime;
 
     public override void OnTriggerEnter(Collider other)
@@ -21,6 +23,6 @@ public class BombSpear : SpearBase
 
     private void Explodes()
     {
-        print("Played explosion particleEffect");
+        Instantiate(explosion, transform.position, Quaternion.identity);
     }
 }
