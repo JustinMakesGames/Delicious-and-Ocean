@@ -12,16 +12,25 @@ public class BombSpear : SpearBase
 
     [SerializeField] private float intervalTime;
 
-    public override void OnTriggerEnter(Collider other)
+    protected override void OnTriggerEnter(Collider other)
     {
         base.OnTriggerEnter(other);
         if (other.TryGetComponent<IDamagable>(out IDamagable damagable))
         {
-            Explodes();
+            ExplodeSpear();
         }
     }
 
-    private void Explodes()
+    public override void OnDamageTaken(int damage, DamageType dmgType)
+    {
+        base.OnDamageTaken(damage, dmgType);
+        if(dmgType == DamageType.Fire)
+        {
+            ExplodeSpear();
+        }
+    }
+
+    private void ExplodeSpear()
     {
         Instantiate(explosion, transform.position, Quaternion.identity);
     }

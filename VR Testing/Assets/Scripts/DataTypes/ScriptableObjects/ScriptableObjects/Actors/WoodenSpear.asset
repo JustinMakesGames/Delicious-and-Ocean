@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 0
   startDamage: 10
-  startState: 0
+  startState: 1
+  damageType: 0

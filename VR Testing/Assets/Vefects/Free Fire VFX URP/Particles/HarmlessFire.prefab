@@ -34040,10 +34040,8 @@ GameObject:
   - component: {fileID: 8295591563862043289}
   - component: {fileID: 8295591563862043294}
   - component: {fileID: 1407084910806003907}
-  - component: {fileID: 5269592266271564791}
-  - component: {fileID: 2126805709702524100}
   m_Layer: 0
-  m_Name: VFX_Fire_01_Medium
+  m_Name: HarmlessFire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38973,43 +38971,3 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &5269592266271564791
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8295591563862043295}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da339b7d7a08a3541b9b4b07264d25eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _actorStatsSO: {fileID: 11400000, guid: d30d4b28890ffd848bee1efb708a4c41, type: 2}
-  _currentHealth: 0
-  _currentState: 0
-  _possibleDrops: []
-  _weaponDamage: 0
-  _oneTimeUse: 0
-  _damageType: 0
---- !u!65 &2126805709702524100
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8295591563862043295}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 2, y: 2, z: 2}
-  m_Center: {x: 0, y: 0, z: 0}

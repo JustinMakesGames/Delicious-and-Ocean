@@ -14,7 +14,8 @@ public enum DamageType
     Electric = 16,
     Blunt = 32,
     Sharp = 64,
-
+    Oil = 128,
+    All = Physical | Fire | Ice | Poison | Electric | Blunt | Sharp | Oil
 }
 public interface IDamagable
 {

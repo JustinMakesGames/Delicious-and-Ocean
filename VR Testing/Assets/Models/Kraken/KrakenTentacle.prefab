@@ -203,7 +203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7990e32c0efa3704194e8cd3e42b22d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _actorStatsSO: {fileID: 0}
+  _actorStatsSO: {fileID: 11400000, guid: b16375b5da9da5641ba6847a5ace5f55, type: 2}
   _currentHealth: 0
   _currentState: 0
   _possibleDrops: []
@@ -252,7 +252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7990e32c0efa3704194e8cd3e42b22d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _actorStatsSO: {fileID: 0}
+  _actorStatsSO: {fileID: 11400000, guid: b16375b5da9da5641ba6847a5ace5f55, type: 2}
   _currentHealth: 0
   _currentState: 0
   _possibleDrops: []
@@ -301,7 +301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7990e32c0efa3704194e8cd3e42b22d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _actorStatsSO: {fileID: 0}
+  _actorStatsSO: {fileID: 11400000, guid: b16375b5da9da5641ba6847a5ace5f55, type: 2}
   _currentHealth: 0
   _currentState: 0
   _possibleDrops: []
@@ -350,7 +350,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7990e32c0efa3704194e8cd3e42b22d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _actorStatsSO: {fileID: 0}
+  _actorStatsSO: {fileID: 11400000, guid: b16375b5da9da5641ba6847a5ace5f55, type: 2}
   _currentHealth: 0
   _currentState: 0
   _possibleDrops: []
@@ -399,7 +399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7990e32c0efa3704194e8cd3e42b22d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _actorStatsSO: {fileID: 0}
+  _actorStatsSO: {fileID: 11400000, guid: b16375b5da9da5641ba6847a5ace5f55, type: 2}
   _currentHealth: 0
   _currentState: 0
   _possibleDrops: []
@@ -448,7 +448,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7990e32c0efa3704194e8cd3e42b22d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _actorStatsSO: {fileID: 0}
+  _actorStatsSO: {fileID: 11400000, guid: b16375b5da9da5641ba6847a5ace5f55, type: 2}
   _currentHealth: 0
   _currentState: 0
   _possibleDrops: []
@@ -497,7 +497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7990e32c0efa3704194e8cd3e42b22d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _actorStatsSO: {fileID: 0}
+  _actorStatsSO: {fileID: 11400000, guid: b16375b5da9da5641ba6847a5ace5f55, type: 2}
   _currentHealth: 0
   _currentState: 0
   _possibleDrops: []
@@ -571,8 +571,8 @@ MonoBehaviour:
   _currentHealth: 0
   _currentState: 0
   _possibleDrops: []
-  _sinkSpeed: 0
-  _despawnTime: 0
+  _sinkSpeed: 3
+  _despawnTime: 6
   _sweepAttackInterval: 0
 --- !u!1 &4920746027485322525 stripped
 GameObject:
@@ -592,7 +592,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7990e32c0efa3704194e8cd3e42b22d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _actorStatsSO: {fileID: 0}
+  _actorStatsSO: {fileID: 11400000, guid: b16375b5da9da5641ba6847a5ace5f55, type: 2}
   _currentHealth: 0
   _currentState: 0
   _possibleDrops: []
@@ -641,7 +641,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7990e32c0efa3704194e8cd3e42b22d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _actorStatsSO: {fileID: 0}
+  _actorStatsSO: {fileID: 11400000, guid: b16375b5da9da5641ba6847a5ace5f55, type: 2}
   _currentHealth: 0
   _currentState: 0
   _possibleDrops: []
@@ -690,7 +690,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7990e32c0efa3704194e8cd3e42b22d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _actorStatsSO: {fileID: 0}
+  _actorStatsSO: {fileID: 11400000, guid: b16375b5da9da5641ba6847a5ace5f55, type: 2}
   _currentHealth: 0
   _currentState: 0
   _possibleDrops: []
@@ -739,7 +739,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7990e32c0efa3704194e8cd3e42b22d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _actorStatsSO: {fileID: 0}
+  _actorStatsSO: {fileID: 11400000, guid: b16375b5da9da5641ba6847a5ace5f55, type: 2}
   _currentHealth: 0
   _currentState: 0
   _possibleDrops: []
@@ -788,7 +788,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7990e32c0efa3704194e8cd3e42b22d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _actorStatsSO: {fileID: 0}
+  _actorStatsSO: {fileID: 11400000, guid: b16375b5da9da5641ba6847a5ace5f55, type: 2}
   _currentHealth: 0
   _currentState: 0
   _possibleDrops: []
@@ -837,7 +837,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7990e32c0efa3704194e8cd3e42b22d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _actorStatsSO: {fileID: 0}
+  _actorStatsSO: {fileID: 11400000, guid: b16375b5da9da5641ba6847a5ace5f55, type: 2}
   _currentHealth: 0
   _currentState: 0
   _possibleDrops: []

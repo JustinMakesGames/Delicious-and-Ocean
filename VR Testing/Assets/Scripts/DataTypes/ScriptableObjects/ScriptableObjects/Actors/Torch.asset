@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Torch
   m_EditorClassIdentifier: 
   maxHealth: 0
-  startDamage: 1
+  startDamage: 0
   startState: 1
   damageType: 2

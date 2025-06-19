@@ -5,12 +5,12 @@ using UnityEngine;
 public class WeaponActor : ActorBase
 {
     public int WeaponDamage() { return _weaponDamage; }
-    [SerializeField] private int _weaponDamage;
+    [SerializeField] protected int _weaponDamage;
 
     [SerializeField]private bool _oneTimeUse = false;
 
     [SerializeField]private DamageType _damageType;
-
+    public DamageType WeaponDamageType() { return _damageType; }
     protected override void Init()
     {
         base.Init();
@@ -21,7 +21,7 @@ public class WeaponActor : ActorBase
         }
     }
 
-    public virtual void OnTriggerEnter(Collider collision)
+    protected virtual void OnTriggerEnter(Collider collision)
     {
         if (collision.TryGetComponent<IDamagable>(out IDamagable damagable))
         {
