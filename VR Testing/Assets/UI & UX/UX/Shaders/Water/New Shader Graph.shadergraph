@@ -301,9 +301,6 @@
             "m_Id": "12f6313d4da040c59e307af7e67a5363"
         },
         {
-            "m_Id": "d6865697a66a445899203ebf348d65de"
-        },
-        {
             "m_Id": "b4f94b541fe143f2a71b99ad6f112b5b"
         },
         {
@@ -5013,9 +5010,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -453.5999450683594,
+            "x": -517.5999755859375,
             "y": 2091.199951171875,
-            "width": 207.99998474121095,
+            "width": 208.0,
             "height": 301.60009765625
         }
     },
@@ -5371,19 +5368,6 @@
     "m_CustomColors": {
         "m_SerializableColors": []
     }
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Texture2DMaterialSlot",
-    "m_ObjectId": "5bb0a2c66b6e471087c22d220b0b3307",
-    "m_Id": 0,
-    "m_DisplayName": "foam color",
-    "m_SlotType": 1,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "Out",
-    "m_StageCapability": 3,
-    "m_BareResource": false
 }
 
 {
@@ -9977,42 +9961,6 @@
     "m_PreviewMode": 0,
     "m_CustomColors": {
         "m_SerializableColors": []
-    }
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
-    "m_ObjectId": "d6865697a66a445899203ebf348d65de",
-    "m_Group": {
-        "m_Id": ""
-    },
-    "m_Name": "Property",
-    "m_DrawState": {
-        "m_Expanded": true,
-        "m_Position": {
-            "serializedVersion": "2",
-            "x": -340.0000305175781,
-            "y": 1325.60009765625,
-            "width": 139.2000274658203,
-            "height": 33.5999755859375
-        }
-    },
-    "m_Slots": [
-        {
-            "m_Id": "5bb0a2c66b6e471087c22d220b0b3307"
-        }
-    ],
-    "synonyms": [],
-    "m_Precision": 0,
-    "m_PreviewExpanded": true,
-    "m_DismissedVersion": 0,
-    "m_PreviewMode": 0,
-    "m_CustomColors": {
-        "m_SerializableColors": []
-    },
-    "m_Property": {
-        "m_Id": "a9535e53adf6435090c296847d7a0d48"
     }
 }
 
