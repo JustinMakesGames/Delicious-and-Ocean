@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: VR Testing
+  productName: Delicious And Ocean
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -148,11 +148,7 @@ PlayerSettings:
   visionOSBundleVersion: 1.0
   tvOSBundleVersion: 1.0
   bundleVersion: 0.1.0
-  preloadedAssets:
-  - {fileID: -8040035426795158671, guid: 6dad0105995e8354b90c0b30f9ac79e9, type: 2}
-  - {fileID: 11400000, guid: 435b08e11786de440b844ed78347c429, type: 2}
-  - {fileID: 11400000, guid: 66959d4a4f614f24aba47e6292aaf6ed, type: 2}
-  - {fileID: -6157190978276808575, guid: 863d03fa19cd272469bae1eeb89ebfd7, type: 2}
+  preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1

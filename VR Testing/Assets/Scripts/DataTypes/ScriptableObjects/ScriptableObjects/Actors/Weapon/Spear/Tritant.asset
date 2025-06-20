@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Tritant
   m_EditorClassIdentifier: 
   maxHealth: 0
-  startDamage: 20
+  startDamage: 50
   startState: 0
   damageType: 0
   fireDamage: 5

@@ -42,6 +42,7 @@ public class ActorBase : MonoBehaviour, IDamagable
     {
         if (_currentState == ImmunityState.Vulnerable)
         {
+            AudioManagement.Instance.PlayAudio("Hit");
             _currentHealth -= damage;
             if (_currentHealth <= 0)
             {
@@ -54,6 +55,7 @@ public class ActorBase : MonoBehaviour, IDamagable
     [ContextMenu("OnActorDeath")]
     protected virtual void OnActorDeath()
     {
+        
         SpawnFood();
         Destroy(gameObject);
     }

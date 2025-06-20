@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bce0bbdfcad061f47a482e97902e6491, type: 3}
   m_Name: KrakenTentacle
   m_EditorClassIdentifier: 
-  maxHealth: 75
+  maxHealth: 10
   startDamage: 10
   startState: 0
   damageType: 1

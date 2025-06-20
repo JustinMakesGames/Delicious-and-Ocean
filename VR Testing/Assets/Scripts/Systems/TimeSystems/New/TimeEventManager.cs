@@ -53,7 +53,6 @@ public class TimeEventManager : MonoBehaviour
     }
     private IEnumerator RegulateTime()
     {
-        var curDay = 0;
         var curSecond = 0;
         var curMinute = 0;
 
@@ -79,17 +78,15 @@ public class TimeEventManager : MonoBehaviour
                 if (curMinute >= _dayDurationInMinutes)
                 {
                     curMinute = 0;
-                    curMinute++;
-                    curDay++;
                     currentDay++;
 
-                    OnDayEnd.Invoke(curDay);
+                    OnDayEnd.Invoke(currentDay);
 
                     // Stop time regulation on uneven days, to do the bossfight
-                    if (curDay % 2 != 0)
+                    if (currentDay % 2 != 0)
                     {
                         continueTimeRegulation = false;
-                        if (_debugValues) DebugPrint($"Time regulation stopped for day {curDay}, BossFight time!", DebugType.warning);
+                        if (_debugValues) DebugPrint($"Time regulation stopped for day {currentDay}, BossFight time!", DebugType.warning);
                     }
                 }
 
@@ -112,7 +109,10 @@ public class TimeEventManager : MonoBehaviour
 
     public void SetNewTimer()
     {
-        currentDay--;
+        if (currentDay != 0)
+        {
+            currentDay++;
+        }
         _minuteTimer = _dayDurationInMinutes - 1;
         _secondTimer = _minuteDurationInSeconds;
         continueTimeRegulation = true;

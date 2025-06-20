@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BombTrident
   m_EditorClassIdentifier: 
   maxHealth: 0
-  startDamage: 25
+  startDamage: 70
   startState: 0
   damageType: 0
   fireDamage: 0

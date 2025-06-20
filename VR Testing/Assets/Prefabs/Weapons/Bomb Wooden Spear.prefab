@@ -151,6 +151,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9218751465572705685, guid: aaa21d3667631a944907b19283b01707,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1262129841855721714, guid: aaa21d3667631a944907b19283b01707, type: 3}
     - {fileID: 1071053190294205107, guid: aaa21d3667631a944907b19283b01707, type: 3}
@@ -267,6 +272,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1262129841855721714, guid: aaa21d3667631a944907b19283b01707, type: 3}
+    - {fileID: 9218751465572705685, guid: aaa21d3667631a944907b19283b01707, type: 3}
+    - {fileID: 74917268912699815, guid: aaa21d3667631a944907b19283b01707, type: 3}
+    - {fileID: 796064723281284363, guid: aaa21d3667631a944907b19283b01707, type: 3}
     m_RemovedGameObjects:
     - {fileID: 5118937496480860734, guid: aaa21d3667631a944907b19283b01707, type: 3}
     m_AddedGameObjects:
@@ -274,11 +282,7 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 3846855078807720122}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1575654329013457766, guid: aaa21d3667631a944907b19283b01707,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5471448208421241014}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aaa21d3667631a944907b19283b01707, type: 3}
 --- !u!4 &3712682329193263141 stripped
 Transform:
@@ -286,32 +290,3 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3247114054715062777}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &4093147834925148831 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1575654329013457766, guid: aaa21d3667631a944907b19283b01707,
-    type: 3}
-  m_PrefabInstance: {fileID: 3247114054715062777}
-  m_PrefabAsset: {fileID: 0}
---- !u!136 &5471448208421241014
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4093147834925148831}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.03469781
-  m_Height: 1.4016197
-  m_Direction: 1
-  m_Center: {x: 0.0037755566, y: -0.004943311, z: -0.003504781}

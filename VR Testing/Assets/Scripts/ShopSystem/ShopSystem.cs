@@ -12,6 +12,7 @@ public class ShopSystem : MonoBehaviour
     {
         if (playerStats.coins < price) return;
 
+        AudioManagement.Instance.PlayAudio("BuySound");
         playerStats.coins -= price;
 
         barrelHandler.GetSpear();

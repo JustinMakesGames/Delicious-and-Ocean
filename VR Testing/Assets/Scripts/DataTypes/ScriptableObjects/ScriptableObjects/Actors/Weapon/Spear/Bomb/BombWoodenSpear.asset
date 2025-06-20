@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BombWoodenSpear
   m_EditorClassIdentifier: 
   maxHealth: 0
-  startDamage: 10
+  startDamage: 30
   startState: 1
   damageType: 0
   fireDamage: 0
