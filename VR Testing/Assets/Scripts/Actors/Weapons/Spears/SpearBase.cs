@@ -13,7 +13,6 @@ public class SpearBase : WeaponActor
 
     [SerializeField] private Transform _fireHolder;
     [SerializeField] private GameObject _fire;
-    [SerializeField] private int fireDamage;
 
     //Test function to test whether or not damaging an actor works
     protected override void OnTriggerEnter(Collider collision)
@@ -44,17 +43,19 @@ public class SpearBase : WeaponActor
             Destroy(gameObject);
         }
     }
+
     public override void OnDamageTaken(int damage, DamageType dmgType)
     {
         print(dmgType);
         base.OnDamageTaken(damage, dmgType);
+
         if(dmgType == DamageType.Fire && _isOiledUp)
         {
             if (_fireHolder.childCount == 0)
             {
                 GameObject fire = Instantiate(_fire, _fireHolder);
                 fire.transform.localScale = Vector3.one * 0.2f; 
-                _weaponDamage += fireDamage;
+                _weaponDamage += _actorStatsSO.fireDamage;
             }
         }
 
@@ -65,6 +66,7 @@ public class SpearBase : WeaponActor
         }
 
     }
+
     private void LateUpdate()
     {
         if (isHolding)
@@ -72,6 +74,7 @@ public class SpearBase : WeaponActor
             transform.rotation = Quaternion.Euler(90, transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z);
         }
     }
+
     public void SetRotationRight(SelectEnterEventArgs args)
     {
         isHolding = true;
@@ -82,4 +85,5 @@ public class SpearBase : WeaponActor
     {
         isHolding = false;
     }
+
 }

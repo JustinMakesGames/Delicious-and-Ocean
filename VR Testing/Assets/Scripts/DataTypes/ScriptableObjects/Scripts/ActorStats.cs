@@ -18,4 +18,7 @@ public class ActorStats : ScriptableObject
     public ImmunityState startState;
 
     public DamageType damageType;
+
+    //Due to timeshortage, putting it in here
+    public int fireDamage;
 }

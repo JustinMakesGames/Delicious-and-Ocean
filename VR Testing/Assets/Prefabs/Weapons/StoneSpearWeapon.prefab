@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2921731895946391933
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4962650759645137439}
+  m_Layer: 0
+  m_Name: FireHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4962650759645137439
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2921731895946391933}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.028, z: 0.661}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1648068997448883543}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5542210160870484981
 GameObject:
   m_ObjectHideFlags: 0
@@ -127,6 +158,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 425243968178299313}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c7da906e223b8cf469ed702ebd68394f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4962650759645137439}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c7da906e223b8cf469ed702ebd68394f,
         type: 3}
@@ -379,6 +414,9 @@ MonoBehaviour:
   _oneTimeUse: 0
   _damageType: 0
   isHolding: 0
+  _isOiledUp: 0
+  _fireHolder: {fileID: 4962650759645137439}
+  _fire: {fileID: 8295591563862043295, guid: 0bb448a441b556d4a9dce7a046b3a05c, type: 3}
 --- !u!1001 &7596801035917715975
 PrefabInstance:
   m_ObjectHideFlags: 0

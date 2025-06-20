@@ -56,7 +56,7 @@ Transform:
   m_GameObject: {fileID: 8692249258471980875}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.595}
+  m_LocalPosition: {x: 0, y: 0, z: 0.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -230,7 +230,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 527192576498171117}
   serializedVersion: 4
-  m_Mass: 0.0000001
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -424,7 +424,6 @@ MonoBehaviour:
   _isOiledUp: 0
   _fireHolder: {fileID: 2528549681840503911}
   _fire: {fileID: 8295591563862043295, guid: 0bb448a441b556d4a9dce7a046b3a05c, type: 3}
-  fireDamage: 0
 --- !u!4 &872333242967336535 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: bbf2a1b9e055dfb47b78684027adca93,

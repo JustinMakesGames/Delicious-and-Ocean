@@ -184,7 +184,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2236164249400872269}
   serializedVersion: 4
-  m_Mass: 0.0000001
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -375,6 +375,9 @@ MonoBehaviour:
   _oneTimeUse: 0
   _damageType: 0
   isHolding: 0
+  _isOiledUp: 0
+  _fireHolder: {fileID: 0}
+  _fire: {fileID: 0}
   canExplode: 0
   hasBeenThrown: 0
   explosion: {fileID: 5980728788777965201, guid: ac11de8e12c7e0d448b68419bd0f3720,
