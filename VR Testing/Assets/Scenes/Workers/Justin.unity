@@ -2145,7 +2145,6 @@ MonoBehaviour:
   _isOiledUp: 0
   _fireHolder: {fileID: 0}
   _fire: {fileID: 0}
-  fireDamage: 0
 --- !u!4 &1115987640 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1578997122106814938, guid: 5561957018e852a4ea78a04a7ec2a0ab,
@@ -2877,7 +2876,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dayDurationInMinutes: 1
-  _minuteDurationInSeconds: 60
+  _minuteDurationInSeconds: 5
   timerText: {fileID: 2099116485}
   OnDayEnd:
     m_PersistentCalls:

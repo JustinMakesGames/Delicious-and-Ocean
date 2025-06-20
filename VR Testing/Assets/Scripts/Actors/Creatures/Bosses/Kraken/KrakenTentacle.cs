@@ -15,6 +15,9 @@ public class KrakenTentacle : ActorChild
 
     private Animator _animator;
 
+    [SerializeField] private Vector3 _attackBoxSize;
+    [SerializeField] private Vector3 _attackBoxOffset;
+
     protected override void Awake()
     {
         base.Awake();
@@ -29,15 +32,18 @@ public class KrakenTentacle : ActorChild
 
         if (!_isSinking)
         {
-            // Trigger the Animator to play the SweepAttack animation
             _animator.SetBool("SweepAttack", true);
-            yield return new WaitForSeconds(3.6f);
-            _animator.SetBool("SweepAttack", false);
 
+            yield return new WaitForSeconds(1f);
+            DamagePlayersInAttackBox();
+
+            yield return new WaitForSeconds(2.6f);
+            _animator.SetBool("SweepAttack", false);
         }
 
         StartCoroutine(SwapStatus());
     }
+
 
     public override void OnDamageTaken(int damage, DamageType dmgType)
     {
@@ -75,4 +81,30 @@ public class KrakenTentacle : ActorChild
         kraken.OnTentacleDeath(gameObject, originPos);
         Destroy(gameObject);
     }
+    private void DamagePlayersInAttackBox()
+    {
+        Vector3 worldCenter = transform.position + transform.rotation * _attackBoxOffset;
+        Vector3 halfExtents = _attackBoxSize * 0.5f;
+        Collider[] hits = Physics.OverlapBox(worldCenter, halfExtents, transform.rotation);
+
+
+        foreach (var hit in hits)
+        {
+            if (hit.TryGetComponent<PlayerStats>(out PlayerStats player))
+            {
+                if (player != null)
+                {
+                    player.GetComponent<IDamagable>().OnDamageTaken(_actorStatsSO.startDamage, DamageType.Physical);
+                }
+            }
+        }
+    }
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Matrix4x4 rotationMatrix = Matrix4x4.TRS(transform.position + transform.rotation * _attackBoxOffset, transform.rotation, Vector3.one);
+        Gizmos.matrix = rotationMatrix;
+        Gizmos.DrawWireCube(Vector3.zero, _attackBoxSize);
+    }
+
 }
