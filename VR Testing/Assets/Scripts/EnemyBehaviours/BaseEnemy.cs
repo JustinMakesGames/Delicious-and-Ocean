@@ -17,6 +17,8 @@ public class BaseEnemy : ActorBase, IDamagable
     public override void OnDamageTaken(int damage, DamageType dmgType)
     {
         base.OnDamageTaken(damage, dmgType);
+
+        AudioManagement.Instance.PlayAudio("Hit");
         StartCoroutine(ShowDamageTaken());
     }
     private IEnumerator ShowDamageTaken()

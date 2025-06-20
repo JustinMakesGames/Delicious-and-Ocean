@@ -159,8 +159,6 @@ public class Fred : BaseEnemy
     }
     private void HandlePlayerSpotted()
     {
-
-
         HandleArcing();
     }
 
@@ -215,6 +213,8 @@ public class Fred : BaseEnemy
 
         float spawnTimer = 0;
         float endSpawnTimer = 1;
+
+        AudioManagement.Instance.PlayAudio("Monster");
         while (time < duration)
         {
             float t = time / duration;
@@ -255,9 +255,6 @@ public class Fred : BaseEnemy
             Vector3 direction = (newPosition.position - transform.position).normalized;
 
             transform.Translate(direction * fishSpeed * Time.deltaTime);
-
-
-
             yield return null;
         }
 

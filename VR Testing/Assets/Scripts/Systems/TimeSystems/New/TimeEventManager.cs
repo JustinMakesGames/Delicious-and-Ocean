@@ -112,6 +112,7 @@ public class TimeEventManager : MonoBehaviour
 
     public void SetNewTimer()
     {
+        currentDay--;
         _minuteTimer = _dayDurationInMinutes - 1;
         _secondTimer = _minuteDurationInSeconds;
         continueTimeRegulation = true;
